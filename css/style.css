@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Abel';
+    src: url('../fonts/Abel-Regular.woff2') format('woff2'),
+        url('../fonts/Abel-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 * {
-	font-family: 'Abel', sans-serif;
+	 font-family: 'Abel';
 }

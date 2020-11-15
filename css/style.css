@@ -1,11 +1,95 @@
-@font-face {
-    font-family: 'Abel';
-    src: url('../fonts/Abel-Regular.woff2') format('woff2'),
-        url('../fonts/Abel-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+body {
+	box-sizing: border-box;
+	font-family: 'Abel';
+	font-style: normal;
+	font-weight: 400;
 }
-* {
-	 font-family: 'Abel';
+.menu__item {
+	font-size: 17px;
+	color: #373737;
+	list-style-type: none;
+}
+.banner__title {
+	font-size: 56px;
+	color: #2F2F2F;
+}
+.banner__title--violet {
+	color: #717CFF;
+}
+/* .banner__subtitle {
+	font-size: 22px;
+	color: #7D7D7D;
+} */
+.button__text {
+	font-size: 22px;
+	color: #FFFFFF;
+}
+.featured__title {
+	font-size: 23px;
+	color: #373737;
+	text-transform: uppercase;
+}
+.title {
+	font-size: 37px;
+	color: #373737;
+}
+.subtitle {
+	font-size: 22px;
+	color: #7D7D7D;
+}
+.card__title {
+	font-size: 24px;
+	color: #37474F;
+}
+.card__text {
+	font-size: 16px;
+	color: #37474F;
+}
+.button-more__link {
+	font-size: 17px;
+	color: #717CFF;
+}
+.date__calendar {
+	font-size: 16px;
+	color: #565656;
+}
+.news__title {
+	font-size: 22px;
+	color: #252525;
+}
+.event__big-text {
+	font-size: 27px;
+	color: #717CFF;
+}
+.event__mini-text {
+	font-size: 18px;
+	color: #717CFF;
+}
+.event__location-text {
+	font-size: 24px;
+	color: #37474F;
+}
+.event__description-text {
+	font-size: 16px;
+	color: #37474F;
+}
+.event__time-text {
+	font-size: 16px;
+	color: #373737;
+}
+.people__name {
+	font-size: 22px;
+	color: #37474F;
+}
+/* .people__proffesion {
+	font-size: 18px;
+	color: #37474F;
+} */
+.testimonial__text {
+	font-size: 18px;
+	color: #37474F;
+}
+.footer__text {
+	font-size: 18px;
+	color: #EEEEEE;
 }

@@ -4,25 +4,28 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=, initial-scale=1.0">
 	<title>Executive study abroad</title>
+	<link r​el​="​preload" ​href​="fonts/Abel-Regular.woff" ​a​s​="​font" ​>
+	<link r​el​="​preload" ​href​="fonts/Abel-Regular.woff2" ​a​s​="​font" ​>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
 </head>
 <body>
 
 	<!-- Шапка сайта и меню навигации -->
 
-	<header>
-		<div>
-			<img src="img/logo.png" alt="logo" width="146" height="52">
-		</div>
-		<nav>
-			<ul>
-				<li>Home</li>
-				<li>About Us</li>
-				<li>Our Services</li>
-				<li>Responsibilities</li>
-				<li>Country</li>
+	<header class="header">
+		<a class="logo">
+			<img src="img/logo.png" alt="logo" width="146" height="52" class="logo__img">
+		</a>
+		<nav class="menu">
+			<ul class="menu__list">
+				<li class="menu__item menu__item--underline">Home</li>
+				<li class="menu__item menu__item--underline">About Us</li>
+				<li class="menu__item menu__item--underline">Our Services</li>
+				<li class="menu__item menu__item--underline">Responsibilities</li>
+				<li class="menu__item menu__item--underline">Country</li>
 			</ul>
-			<button>
+			<button class="header__button menu__item">
 				Apply
 			</button>
 		</nav>
@@ -30,127 +33,126 @@
 
 	<!-- Основной контент сайта -->
 
-	<main>
+	<main class="main">
 
 		<!-- Главный баннер сайта с кнопкой -->
 
-		<section>
-			<div>
-				<h1>We Help to <span>Build</span>
+		<section class="banner">
+			<div class="banner__text">
+				<h1 class="banner__title">We Help to
+					<span class="banner__title--violet">Build</span>
 					<br>Your Dream
 				</h1>
-				<p>We are always availed to consult on taking your higher education to the
+				<p class="banner__subtitle subtitle">We are always availed to consult on taking your higher education to the
 					next level so you can stay competitive in the global world. We welcome the
 					opportunity to work with you "today" for "tomorrow's" better career
 				</p>
-				<button>
-					<span>Apply Online</span>
-					<img src="img/icon/arrow.svg" alt="arrow" width="18" height="16">
+				<button class="button banner__button">
+					<span class="button__text">Apply Online</span>
+					<img  class="button__arrow" src="img/icon/arrow.svg" alt="arrow" width="18" height="16">
 				</button>
-				<div>
-					<img src="img/icon/facebook.svg" alt="facebook" width="11" height="20">
-					<img src="img/icon/twitter.svg" alt="twitter" width="21" height="18">
-					<img src="img/icon/instagram.svg" alt="instagram" width="21" height="22">
+				<div class="social">
+					<img class="social__icon" src="img/icon/facebook.svg" alt="facebook" width="11" height="20">
+					<img class="social__icon" src="img/icon/twitter.svg" alt="twitter" width="21" height="18">
+					<img class="social__icon" src="img/icon/instagram.svg" alt="instagram" width="21" height="22">
 				</div>
 			</div>
-			<div>
-				<img src="img/banner.png" alt="banner" width="470" height="565">
-				<img src="img/oval.png" alt=" oval" width="1030" height="581">
+			<div class="banner__img">
+				<img class="banner__img--girl" src="img/banner.png" alt="banner" width="470" height="565">
+				<img class="banner__img--oval" src="img/oval.png" alt=" oval" width="1030" height="581">
 			</div>
 		</section>
 
 		<!-- Слайдер с логотипами университетов -->
 
-		<section>
-			<div>
-				<p>Featured Universities</p>
-			</div>
-			<div>
-				<img src="img/featured_1.png" alt="featured" width="225" height="68">
-				<img src="img/featured_2.png" alt="featured" width="250" height="64">
-				<img src="img/featured_3.png" alt="featured" width="224" height="79">
-				<img src="img/featured_4.png" alt="featured" width="275" height="62">
+		<section class="featured">
+			<p class="featured__title">Featured Universities</p>
+			<div class="featured__slider">
+				<img class="featured__img" src="img/featured_1.png" alt="featured" width="225" height="68">
+				<img class="featured__img" src="img/featured_2.png" alt="featured" width="250" height="64">
+				<img class="featured__img" src="img/featured_3.png" alt="featured" width="224" height="79">
+				<img class="featured__img" src="img/featured_4.png" alt="featured" width="275" height="62">
 			</div>
 		</section>
 
 		<!-- Наши услуги -->
 
-		<section>
-			<div>
-				<h2>Our Services</h2>
-				<p>Executive Trade International is an University Application Centre,
+		<section class="services">
+			<div class="services__header">
+				<h2 class="title">Our Services</h2>
+				<p class="subtitle">Executive Trade International is an University Application Centre,
 					guiding Bangladeshi students to Australian, British,
 					Canadian and Irish universities!
 				</p>
 			</div>
-			<div>
-				<article>
-					<div>
-						<img src="img/icon/services_1.svg" alt="icon" width="76" height="76">
-						<h3>Career Counselling</h3>
-						<p>Maiores voluptas laboriosam non dolorum perferendis fuga repellat aut.
+			<div class="services__wrapper">
+				<article class="services__card">
+					<div class="card">
+						<img class="card__img" src="img/icon/services_1.svg" alt="icon" width="76" height="76">
+						<h3 class="card__title">Career Counselling</h3>
+						<p class="card__text">Maiores voluptas laboriosam non dolorum perferendis fuga repellat aut.
 							Blanditiis quos in minus. Voluptatum quia quia voluptas voluptatem vero
 							ex possimus. Iure et consectetur dolorem dicta accusantium fugiat.
 						</p>
-						<div>
-							<a href="#">Learn more</a>
-							<img src="img/icon/arrow.svg" alt="arrow" width="24" height="24">
+						<div class="button-more">
+							<a class="button-more__link" href="#">Learn more</a>
+							<img class="button-more__img" src="img/icon/arrow.svg" alt="arrow" width="24" height="24">
 						</div>
 					</div>
 				</article>
-				<article>
-					<div>
-						<img src="img/icon/services_2.svg" alt="icon" width="76" height="76">
-						<h3>University Admissions</h3>
-						<p>Maiores voluptas laboriosam non dolorum perferendis fuga repellat aut. Blanditiis
+				<article class="services__card">
+					<div class="card">
+						<img class="card__img" src="img/icon/services_2.svg" alt="icon" width="76" height="76">
+						<h3 class="card__title">University Admissions</h3>
+						<p class="card__text">Maiores voluptas laboriosam non dolorum perferendis fuga repellat aut. Blanditiis
 							quos in minus. Voluptatum quia quia voluptas voluptatem vero ex possimus.
 							Iure et consectetur dolorem dicta accusantium fugiat.
 						</p>
-						<div>
-							<a href="#">Learn more</a>
-							<img src="img/icon/arrow.svg" alt="arrow" width="24" height="24">
+						<div class="button-more">
+							<a class="button-more__link" href="#">Learn more</a>
+							<img class="button-more__img" src="img/icon/arrow.svg" alt="arrow" width="24" height="24">
 						</div>
 					</div>
 				</article>
-				<article>
-					<div>
-						<img src="img/icon/services_3.svg" alt="icon" width="76" height="76">
-						<h3>Visa Consultancy</h3>
-						<p>Maiores voluptas laboriosam non dolorum perferendis fuga repellat aut.
+				<article class="services__card">
+					<div class="card">
+						<img class="card__img" src="img/icon/services_3.svg" alt="icon" width="76" height="76">
+						<h3 class="card__title">Visa Consultancy</h3>
+						<p class="card__text">Maiores voluptas laboriosam non dolorum perferendis fuga repellat aut.
 							Blanditiis quos in minus. Voluptatum quia quia voluptas voluptatem vero
 							ex possimus. Iure et consectetur dolorem dicta accusantium fugiat.
 						</p>
-						<div>
-							<a href="#">Learn more</a>
-							<img src="img/icon/arrow.svg" alt="arrow" width="24" height="24">
+						<div class="button-more">
+							<a class="button-more__link" href="#">Learn more</a>
+							<img class="button-more__img" src="img/icon/arrow.svg" alt="arrow" width="24" height="24">
 						</div>
 					</div>
 				</article>
-				<article>
-					<div>
-						<img src="img/icon/services_4.svg" alt="icon" width="76" height="76">
-						<h3>Accommodation</h3>
-						<p>Maiores voluptas laboriosam non dolorum perferendis fuga repellat aut.
+				<article class="services__card">
+					<div class="card">
+						<img class="card__img" src="img/icon/services_4.svg" alt="icon" width="76" height="76">
+						<h3 class="card__title">Accommodation</h3>
+						<p class="card__text">Maiores voluptas laboriosam non dolorum perferendis fuga repellat aut.
 							Blanditiis quos in minus. Voluptatum quia quia voluptas voluptatem vero ex possimus.
 							Iure et consectetur dolorem dicta accusantium fugiat.
 						</p>
-						<div>
-							<a href="#">Learn more</a>
-							<img src="img/icon/arrow.svg" alt="arrow" width="24" height="24">
+						<div class="button-more">
+							<a class="button-more__link" href="#">Learn more</a>
+							<img class="button-more__img" src="img/icon/arrow.svg" alt="arrow" width="24" height="24">
 						</div>
 					</div>
 				</article>
-				<article>
-					<div>
-						<img src="img/icon/services_5.svg" alt="icon" width="76" height="76">
-						<h3>Pre-Departure Briefing</h3>
-						<p>Maiores voluptas laboriosam non dolorum perferendis fuga repellat aut.
+				<article class="services__card">
+					<div class="card">
+						<img class="card__img" src="img/icon/services_5.svg" alt="icon" width="76" height="76">
+						<h3 class="card__title">Pre-Departure Briefing</h3>
+						<p class="card__text">Maiores voluptas laboriosam non dolorum perferendis fuga repellat aut.
 							Blanditiis quos in minus. Voluptatum quia quia voluptas voluptatem vero
 							ex possimus. Iure et consectetur dolorem dicta accusantium fugiat.
 						</p>
-						<div>
-							<a href="#">Learn more</a>
-							<img src="img/icon/arrow.svg" alt="arrow" width="24" height="24">
+						<div class="button-more">
+							<a class="button-more__link" href="#">Learn more</a>
+							<img class="button-more__img" src="img/icon/arrow.svg" alt="arrow" width="24" height="24">
 						</div>
 					</div>
 				</article>
@@ -159,134 +161,130 @@
 
 		<!-- Новости -->
 
-		<section>
-			<div>
-				<h2>News</h2>
-				<p>Sunt autem nusquam hoc epicurus in gravissimo bello animadversionis metu
+		<section class="news">
+			<div class="news__title">
+				<h2 class="title">News</h2>
+				<p class="subtitle">Sunt autem nusquam hoc epicurus in gravissimo bello animadversionis metu
 					 degendae praesidia firmissima. Torquatos nostros? quos tu paulo ante cum
 					 teneam sententiam, quid bonum esse vult.
 				</p>
 			</div>
-			<div>
-				<article>
-					<div>
+			<div class="news__wrapper">
+				<article class="news__card">
+					<div class="news__img">
 						<img src="img/card_news_1.png" alt="card" width="344" height="224">
 					</div>
-					<div>
-						<img src="img/icon/calendar.svg" alt="calendar" width="14" height="14">
-						<span>17 Apr 2020</span>
+					<div class="news__date">
+						<img class="date__icon" src="img/icon/calendar.svg" alt="calendar" width="14" height="14">
+						<span class="date__calendar">17 Apr 2020</span>
 					</div>
-					<div>
+					<div class="news__title">
 						<p>Come On In. The Water’s Fine (Mostly).</p>
 					</div>
 				</article>
-				<article>
-					<div>
+				<article class="news__card">
+					<div class="news__img">
 						<img src="img/card_news_2.png" alt="card" width="344" height="224">
 					</div>
-					<div>
-						<img src="img/icon/calendar.svg" alt="calendar" width="14" height="14">
-						<span>17 Apr 2020</span>
+					<div class="news__date">
+						<img class="date__icon" src="img/icon/calendar.svg" alt="calendar" width="14" height="14">
+						<span class="date__calendar">17 Apr 2020</span>
 					</div>
-					<div>
+					<div class="news__title">
 						<p>Trump Lays Plans to Reverse Obama’s Climate Change Legacy</p>
 					</div>
 				</article>
-				<article>
-					<div>
-						<img src="img/card_news_3.png" alt="card" width="344" height="224">
+				<article class="news__card">
+					<div class="news__img">
+						<img class="date__icon" src="img/card_news_3.png" alt="card" width="344" height="224">
 					</div>
-					<div>
-						<img src="img/icon/calendar.svg" alt="calendar" width="14" height="14">
-						<span>17 Apr 2020</span>
+					<div class="news__date">
+						<img class="date__icon" src="img/icon/calendar.svg" alt="calendar" width="14" height="14">
+						<span class="date__calendar">17 Apr 2020</span>
 					</div>
-					<div>
+					<div class="news__title">
 						<p>How a Little Bit of Hydra Regrows a Whole Animal</p>
 					</div>
 				</article>
 			</div>
-			<div>
-				<button>
-					<span>Join Here</span>
-					<img src="img/icon/arrow.svg" alt="arrow" width="18" height="16">
+			<div class="news__button">
+				<button class="button button__small">
+					<span class="button__text">Join Here</span>
+					<img class="button__arrow" src="img/icon/arrow.svg" alt="arrow" width="18" height="16">
 				</button>
 			</div>
 		</section>
 
 		<!-- Мероприятия -->
 
-		<section>
-			<div>
-				<h2>Upcoming University Events</h2>
-				<p>Sunt autem nusquam hoc epicurus in gravissimo bello animadversionis
+		<section class="event">
+			<div class="event__title">
+				<h2 class="title">Upcoming University Events</h2>
+				<p class="subtitle">Sunt autem nusquam hoc epicurus in gravissimo bello animadversionis
 					metu degendae praesidia firmissima. Torquatos nostros? quos tu paulo
 					 ante cum teneam sententiam, quid bonum esse vult.
 				</p>
 			</div>
-			<div>
-				<article>
-					<div>
-						<div>
-							<span>
-								23 <wbr>
-								Dec
-							</span>
+			<div class="event__wrapper">
+				<article class="event__card">
+					<div class="event__info">
+						<div class="event__date">
+							<p class="event__big-text"> 23 </p>
+							<p  class="event__mini-text">Dec</p>
 						</div>
-						<div>
-							<p>
+						<div class="event__location">
+							<p class="event__location-text">
 								Macquarie University, Sydney, Australia
 							</p>
 						</div>
 					</div>
-					<div>
-						<p>
+					<div class="event__description">
+						<p class="event__description-text">
 							Maiores voluptas laboriosam non dolorum perferendis fuga
 							repellat aut. Blanditiis quos in minus. Voluptatum quia quia
 							voluptas voluptatem vero ex possimus. Iure et consectetur dolorem
 							 dicta accusantium fugiat.
 						</p>
 					</div>
-					<div>
-						<div>
-							<a href="#">Learn More</a>
-							<img src="img/icon/arrow.svg" alt="arrow" width="16" height="15">
+					<div class="event__link">
+						<div class="button-more">
+							<a class="button-more__link" href="#">Learn More</a>
+							<img class="button-more__img" src="img/icon/arrow.svg" alt="arrow" width="16" height="15">
 						</div>
-						<div>
-							<img src="img/time.svg" alt="time" width="17" height="17">
-							<time>10:00 AM - 2:00 PM</time>
+						<div class="event__time">
+							<img class="event__time-icon" src="img/time.svg" alt="time" width="17" height="17">
+							<time class="event__time-text" >10:00 AM - 2:00 PM</time>
 						</div>
 					</div>
 				</article>
-				<article>
-					<div>
-						<div>
-							<span>
-								17 <wbr>
-								Dec
-							</span>
+				<article class="event__card">
+					<div class="event__info">
+						<div class="event__date">
+							<p class="event__big-text"> 17 </p>
+							<p class="event__mini-text">Dec</p>
 						</div>
-						<div>
-							<p>
+						<div class="event__location">
+							<p class="event__location-text">
 								Federation University, Australia
 							</p>
 						</div>
 					</div>
-					<div>
-						<p>
+					<div class="event__description">
+						<p class="event__description-text">
 							Maiores voluptas laboriosam non dolorum perferendis fuga
 							repellat aut. Blanditiis quos in minus. Voluptatum quia quia
 							voluptas voluptatem vero ex possimus. Iure et consectetur dolorem
 							 dicta accusantium fugiat.
 						</p>
 					</div>
-					<div>
-						<div>
-							<a href="#">Learn More</a>
-							<img src="img/icon/arrow.svg" alt="arrow" width="16" height="15">
+					<div class="event__link">
+						<div class="button-more">
+							<a  class="button-more__link" href="#">Learn More</a>
+							<img class="button-more__img" src="img/icon/arrow.svg" alt="arrow" width="16" height="15">
 						</div>
-						<div>
-							<img src="img/time.svg" alt="time" width="17" height="17">
-							<time>10:00 AM - 2:00 PM</time>
+						<div class="event__time">
+							<img class="event__time-icon" src="img/time.svg" alt="time" width="17" height="17">
+							<time class="event__time-text">10:00 AM - 2:00 PM</time>
 						</div>
 					</div>
 				</article>
@@ -295,46 +293,52 @@
 
 		<!-- Слайдер страны обучения -->
 
-		<section>
-			<div>
-				<h2>
+		<section class="countries">
+			<div class="countries__title">
+				<h2 class="title">
 					Countries We Covered
 				</h2>
-				<p>
+				<p class="subtitle">
 					Sunt autem nusquam hoc epicurus in gravissimo bello animadversionis
 					metu degendae praesidia firmissima. Torquatos nostros? quos tu paulo
 					ante cum teneam sententiam, quid bonum esse vult.
 				</p>
 			</div>
-			<div>
-				<article>
-					<img src="img/countries_1.png" alt="countries" width="348" height="215">
-					<h3>
+			<div class="countries__wrapper">
+				<article class="countries__card">
+					<div class="countries__img">
+						<img src="img/countries_1.png" alt="countries" width="348" height="215">
+					</div>
+					<h3 class="countries__title">
 						Study in Australia
 					</h3>
-					<p>
+					<p class="countries__subtitle">
 						Ut aut corporis accusantium illo ullam qui laudantium.
 						Maxime rerum sunt et sequi sed qui rerum hic. Voluptatem maiores
 						voluptatum voluptate porro harum. Facilis voluptatum eum est.
 					</p>
 				</article>
-				<article>
-					<img src="img/countries_2.png" alt="countries" width="348" height="215">
-					<h3>
+				<article class="countries__card">
+					<div class="countries__img">
+						<img src="img/countries_2.png" alt="countries" width="348" height="215">
+					</div>
+					<h3 class="countries__title">
 						Study in Canada
 					</h3>
-					<p>
+					<p class="countries__subtitle">
 						Ut aut corporis accusantium illo ullam qui laudantium.
 						Maxime rerum sunt et sequi sed qui rerum hic. Voluptatem maiores
 						voluptatum voluptate porro harum. Facilis voluptatum eum est.
 					</p>
 				</article>
-				<article>
-					<img src="img/countries_3.png" alt="countries" width="348" height="215">
-					<h3>
+				<article class="countries__card">
+					<div class="countries__img">
+						<img src="img/countries_3.png" alt="countries" width="348" height="215">
+					</div>
+					<h3 class="countries__title">
 						Study in Canada
 					</h3>
-					<p>
+					<p class="countries__subtitle">
 						Ut aut corporis accusantium illo ullam qui laudantium.
 						Maxime rerum sunt et sequi sed qui rerum hic. Voluptatem maiores
 						voluptatum voluptate porro harum. Facilis voluptatum eum est.
@@ -345,30 +349,33 @@
 
 		<!-- Слайдер с отзывами -->
 
-		<section>
-			<div>
-				<h2>
+		<section class="testimonial">
+			<div class="testimonial__title">
+				<h2 class="title">
 					Testimonial
 				</h2>
-				<p>
+				<p class="subtitle">
 					Torquem detraxit hosti et quidem faciunt, ut et negent satis esse appetendum,
 					alterum. Si sine causa? quae fuerit causa, mox videro; interea hoc epicurus in liberos.
 				</p>
 			</div>
-			<div>
-				<article>
-					<div>
+			<div class="testimonial__wrapper">
+				<article class="testimonial__card">
+
+					<!-- зеленая деталь, можно вставить псевдоэлементом? -->
+					<!-- <div>
 						<img src="img/green_detail.png" alt="green" width="196" height="1274">
-					</div>
-					<div>
-						<img src="img/testimonial_1.png" alt="face" width="62" height="62">
-						<div>
-							<span>Harrison Phillips</span>
-							<span>Reporter</span>
+					</div> -->
+
+					<div class="people">
+						<img class="people__img" src="img/testimonial_1.png" alt="face" width="62" height="62">
+						<div class="people__card">
+							<span class="people__name">Harrison Phillips</span>
+							<span class="people__proffesion testimonial__text">Reporter</span>
 						</div>
 					</div>
-					<div>
-						<p>
+					<div class="testimonial__box">
+						<p class="testimonial__text">
 							Nisi cumque in necessitatibus molestiae eaque excepturi ab. Laboriosam
 							ipsam voluptatem voluptatibus labore quam nihil. Quasi occaecati quos
 							ratione quia aut molestiae velit et. Voluptatem id ea dicta inventore et quo impedit repudiandae.
@@ -376,32 +383,32 @@
 						</p>
 					</div>
 				</article>
-				<article>
-					<div>
-						<img src="img/testimonial_2.png" alt="face" width="62" height="62">
-					<div>
-						<span>Ainara Vergaras</span>
-						<span>Landscape Architect</span>
+				<article class="testimonial__card">
+					<div class="people">
+						<img class="people__img" src="img/testimonial_2.png" alt="face" width="62" height="62">
+						<div class="people__card">
+							<span class="people__name">Ainara Vergaras</span>
+							<span class="people__proffesion testimonial__text">Landscape Architect</span>
+						</div>
 					</div>
-					</div>
-					<div>
-						<p>
+					<div class="testimonial__box">
+						<p class="testimonial__text">
 							Aut consectetur voluptas. Voluptatem minus quo voluptas in nulla iste. Fugiat alias sit
 							sed dolorem quo. Qui praesentium et doloribus minima neque. Facere debitis sed est
 							suscipit velit reprehenderit. Dolores aliquid dolore consequuntur ex.
 						</p>
 					</div>
 				</article>
-				<article>
-					<div>
-						<img src="img/testimonial_3.png" alt="face" width="62" height="62">
-					<div>
-						<span>Niek Bove</span>
-						<span>Senior Developer</span>
+				<article class="testimonial__card">
+					<div class="people">
+						<img class="people__img" src="img/testimonial_3.png" alt="face" width="62" height="62">
+						<div class="people__card">
+							<span class="people__name">Niek Bove</span>
+							<span class="people__proffesion">Senior Developer</span>
+						</div>
 					</div>
-					</div>
-					<div>
-						<p>
+					<div class="testimonial__box">
+						<p class="testimonial__text">
 							Rem quia possimus eum adipisci autem aut sunt laboriosam autem. Qui soluta ut
 							aut excepturi dolorem laborum ut. Qui alias aut provident quas illo. Eveniet debitis
 							totam quaerat. Enim voluptatem fuga qui. Numquam iusto vero ipsa eveniet
@@ -414,58 +421,56 @@
 
 		<!-- Секция с кнопкой и призывом к действию -->
 
-		<section>
-			<div>
-				<p>
+		<section class="action">
+			<div class="action__title">
+				<p class="title">
 					Ready to chase your dreams?
 				</p>
 			</div>
-			<button>
-				<span>Apply Online</span>
-				<img src="img/icon/arrow.svg" alt="arrow" width="18" height="16">
+			<button class="button button__action">
+				<span class="button__text">Apply Online</span>
+				<img class="button__arrow" src="img/icon/arrow.svg" alt="arrow" width="18" height="16">
 			</button>
 		</section>
 	</main>
 
 	<!-- Подвал -->
 
-	<footer>
-		<div>
-			<div>
+	<footer class="footer">
+		<div class="footer__info">
+			<div class="logo logo__footer">
 				<img src="img/logo_white.png" alt="logo" width="160" height="57">
 			</div>
-			<address>
-				<span>
+			<address class="address">
+				<span class="address__text footer__text">
 					Concord Royal Court (3rd floor)
 				</span>
-				<span>
+				<span class="address__text footer__text">
 					Dhanmondi, Dhaka 1209, Bangladesh.
 				</span>
 			</address>
-			<div>
-				<span>© 2020 Executive Trade International.</span>
+			<div class="corporation">
+				<span class="footer__text">© 2020 Executive Trade International.</span>
 			</div>
 		</div>
-		<div>
-			<ul>
-				<li>About Us</li>
-				<li>Responsibilities</li>
-				<li>Our Services</li>
-				<li>Contact</li>
-			</ul>
-		</div>
-		<div>
-			<ul>
-				<li>Disclaimer</li>
-				<li>Testimonials</li>
-				<li>Privacy Policy</li>
-				<li>Terms of Service</li>
-			</ul>
-		</div>
-		<div>
-			<img src="img/icon/facebook_white.svg" alt="facebook" width="9" height="16">
-			<img src="img/icon/twitter_white.svg" alt="twitter" width="16" height="14">
-			<img src="img/icon/instagram_white.svg" alt="instagram" width="16" height="16">
+		<nav class="footer__nav">
+			<div class="footer__menu">
+				<a class="footer__menu-item footer__text" href="#">About Us</a>
+				<a class="footer__menu-item footer__text" href="#">Responsibilities</a>
+				<a class="footer__menu-item footer__text" href="#">Our Services</a>
+				<a class="footer__menu-item footer__text" href="#">Contact</a>
+			</div>
+			<div class="footer__menu">
+				<a class="footer__menu-item footer__text" href="#">Disclaimer</a>
+				<a class="footer__menu-item footer__text" href="#">Testimonials</a>
+				<a class="footer__menu-item footer__text" href="#">Privacy Policy</a>
+				<a class="footer__menu-item footer__text" href="#">Terms of Service</a>
+			</div>
+		</nav>
+		<div class="footer__social">
+			<img class="footer__icon" src="img/icon/facebook_white.svg" alt="facebook" width="9" height="16">
+			<img class="footer__icon" src="img/icon/twitter_white.svg" alt="twitter" width="16" height="14">
+			<img class="footer__icon" src="img/icon/instagram_white.svg" alt="instagram" width="16" height="16">
 		</div>
 	</footer>
 </body>

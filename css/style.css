@@ -1,8 +1,13 @@
 body {
 	box-sizing: border-box;
-	font-family: 'Abel';
+	font-family: 'Abel', sans-serif;
 	font-style: normal;
 	font-weight: 400;
+	max-width: 1440px;
+	margin: 0;
+}
+.main {
+	padding: 40px 150px;
 }
 .menu__item {
 	font-size: 17px;
@@ -16,26 +21,43 @@ body {
 .banner__title--violet {
 	color: #717CFF;
 }
-/* .banner__subtitle {
-	font-size: 22px;
-	color: #7D7D7D;
-} */
+.button {
+	background-color: #717CFF;
+	border: none;
+	border-radius: 11px;
+	width: 262px;
+	height: 64px;
+}
+.button__small {
+	width: 226px;
+}
 .button__text {
 	font-size: 22px;
 	color: #FFFFFF;
+}
+.banner__img--girl {
+	background-image: url(../img/Oval.png);
+	background-position: 1;
 }
 .featured__title {
 	font-size: 23px;
 	color: #373737;
 	text-transform: uppercase;
+	text-align: center;
 }
 .title {
 	font-size: 37px;
 	color: #373737;
+	text-align: center;
 }
 .subtitle {
 	font-size: 22px;
 	color: #7D7D7D;
+	text-align: center;
+}
+.banner__subtitle {
+	text-align: left;
+	line-height: 38px;
 }
 .card__title {
 	font-size: 24px;
@@ -44,6 +66,7 @@ body {
 .card__text {
 	font-size: 16px;
 	color: #37474F;
+	line-height: 28px;
 }
 .button-more__link {
 	font-size: 17px;
@@ -56,6 +79,9 @@ body {
 .news__title {
 	font-size: 22px;
 	color: #252525;
+}
+.news__img {
+	margin-bottom: 28px;
 }
 .event__big-text {
 	font-size: 27px;
@@ -81,15 +107,38 @@ body {
 	font-size: 22px;
 	color: #37474F;
 }
-/* .people__proffesion {
-	font-size: 18px;
-	color: #37474F;
-} */
 .testimonial__text {
 	font-size: 18px;
 	color: #37474F;
+	line-height: 31px;
+}
+.footer {
+	background-color: #717CFF;
+	padding: 64px 145px 45px 145px;
+}
+.footer__menu {
+	list-style-type: none;
+}
+.footer__menu-item {
+	text-decoration: none;
+	line-height: 49px;
 }
 .footer__text {
 	font-size: 18px;
 	color: #EEEEEE;
+}
+.footer__icon {
+	margin-right: 28px;
+}
+.menu__item--underline {
+	margin-left: 7%;
+}
+.menu__list {
+	flex-basis: 90%;
+	justify-content: space-between;
+}
+.header__button {
+	border: #717CFF solid 2px;
+	border-radius: 11px;
+	padding: 10px 38px;
 }

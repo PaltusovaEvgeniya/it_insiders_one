@@ -8,49 +8,50 @@
 	<link r​el​="​preload" ​href​="fonts/Abel-Regular.woff2" ​a​s​="​font" ​>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" href="css/flex.css">
 </head>
 <body>
-
-	<!-- Шапка сайта и меню навигации -->
-
-	<header class="header">
-		<a class="logo">
-			<img src="img/logo.png" alt="logo" width="146" height="52" class="logo__img">
-		</a>
-		<nav class="menu">
-			<ul class="menu__list">
-				<li class="menu__item menu__item--underline">Home</li>
-				<li class="menu__item menu__item--underline">About Us</li>
-				<li class="menu__item menu__item--underline">Our Services</li>
-				<li class="menu__item menu__item--underline">Responsibilities</li>
-				<li class="menu__item menu__item--underline">Country</li>
-			</ul>
-			<button class="header__button menu__item">
-				Apply
-			</button>
-		</nav>
-	</header>
 
 	<!-- Основной контент сайта -->
 
 	<main class="main">
 
+		<!-- Шапка сайта и меню навигации -->
+
+		<header class="header">
+			<a class="logo">
+				<img src="img/logo.png" alt="logo" width="146" height="52" class="logo__img">
+			</a>
+			<nav class="menu">
+				<div class="menu__list">
+					<a href="#" class="menu__item menu__item--underline">Home</a>
+					<a href="#" class="menu__item menu__item--underline">About Us</a>
+					<a href="#" class="menu__item menu__item--underline">Our Services</a>
+					<a href="#" class="menu__item menu__item--underline">Responsibilities</a>
+					<a href="#" class="menu__item menu__item--underline">Country</a>
+					<a href="#" class="menu__item menu__item--underline header__button">Apply</a>
+				</div>
+			</nav>
+		</header>
+
 		<!-- Главный баннер сайта с кнопкой -->
 
 		<section class="banner">
-			<div class="banner__text">
-				<h1 class="banner__title">We Help to
-					<span class="banner__title--violet">Build</span>
-					<br>Your Dream
-				</h1>
-				<p class="banner__subtitle subtitle">We are always availed to consult on taking your higher education to the
-					next level so you can stay competitive in the global world. We welcome the
-					opportunity to work with you "today" for "tomorrow's" better career
-				</p>
-				<button class="button banner__button">
-					<span class="button__text">Apply Online</span>
-					<img  class="button__arrow" src="img/icon/arrow.svg" alt="arrow" width="18" height="16">
-				</button>
+			<div class="banner__wrapper">
+				<div class="banner__text">
+					<h1 class="banner__title">We Help to
+						<span class="banner__title banner__title--violet">Build</span>
+						<br>Your Dream
+					</h1>
+					<p class="banner__subtitle subtitle">We are always availed to consult on taking your higher education to the
+						next level so you can stay competitive in the global world. We welcome the
+						opportunity to work with you "today" for "tomorrow's" better career
+					</p>
+					<button class="button banner__button">
+						<span class="button__text">Apply Online</span>
+						<img  class="button__arrow" src="img/icon/arrow.svg" alt="arrow" width="18" height="16">
+					</button>
+				</div>
 				<div class="social">
 					<img class="social__icon" src="img/icon/facebook.svg" alt="facebook" width="11" height="20">
 					<img class="social__icon" src="img/icon/twitter.svg" alt="twitter" width="21" height="18">
@@ -58,8 +59,8 @@
 				</div>
 			</div>
 			<div class="banner__img">
-				<img class="banner__img--girl" src="img/banner.png" alt="banner" width="470" height="565">
-				<img class="banner__img--oval" src="img/oval.png" alt=" oval" width="1030" height="581">
+				<img class="banner__img banner__img--girl" src="img/banner.png" alt="banner" width="470" height="565">
+				<!-- <img class="banner__img--oval" src="img/oval.png" alt=" oval" width="1030" height="581"> -->
 			</div>
 		</section>
 
@@ -174,7 +175,7 @@
 					<div class="news__img">
 						<img src="img/card_news_1.png" alt="card" width="344" height="224">
 					</div>
-					<div class="news__date">
+					<div class="date">
 						<img class="date__icon" src="img/icon/calendar.svg" alt="calendar" width="14" height="14">
 						<span class="date__calendar">17 Apr 2020</span>
 					</div>
@@ -186,7 +187,7 @@
 					<div class="news__img">
 						<img src="img/card_news_2.png" alt="card" width="344" height="224">
 					</div>
-					<div class="news__date">
+					<div class="date">
 						<img class="date__icon" src="img/icon/calendar.svg" alt="calendar" width="14" height="14">
 						<span class="date__calendar">17 Apr 2020</span>
 					</div>
@@ -196,9 +197,9 @@
 				</article>
 				<article class="news__card">
 					<div class="news__img">
-						<img class="date__icon" src="img/card_news_3.png" alt="card" width="344" height="224">
+						<img class="news__icon" src="img/card_news_3.png" alt="card" width="344" height="224">
 					</div>
-					<div class="news__date">
+					<div class="date">
 						<img class="date__icon" src="img/icon/calendar.svg" alt="calendar" width="14" height="14">
 						<span class="date__calendar">17 Apr 2020</span>
 					</div>
@@ -229,17 +230,18 @@
 				<article class="event__card">
 					<div class="event__info">
 						<div class="event__date">
-							<p class="event__big-text"> 23 </p>
-							<p  class="event__mini-text">Dec</p>
+							<span class="event__date event__big-text"> 23 </span>
+							<span  class="event__date event__mini-text">Dec</span>
 						</div>
 						<div class="event__location">
-							<p class="event__location-text">
-								Macquarie University, Sydney, Australia
+							<p class="event__location event__location-text">
+								Macquarie University,
+								<br> Sydney, Australia
 							</p>
 						</div>
 					</div>
 					<div class="event__description">
-						<p class="event__description-text">
+						<p class="event__description-text card__text">
 							Maiores voluptas laboriosam non dolorum perferendis fuga
 							repellat aut. Blanditiis quos in minus. Voluptatum quia quia
 							voluptas voluptatem vero ex possimus. Iure et consectetur dolorem
@@ -260,17 +262,18 @@
 				<article class="event__card">
 					<div class="event__info">
 						<div class="event__date">
-							<p class="event__big-text"> 17 </p>
-							<p class="event__mini-text">Dec</p>
+							<span class="event__big-text"> 17 </span>
+							<span class="event__mini-text">Dec</span>
 						</div>
 						<div class="event__location">
 							<p class="event__location-text">
-								Federation University, Australia
+								Federation University,
+								<br> Australia
 							</p>
 						</div>
 					</div>
 					<div class="event__description">
-						<p class="event__description-text">
+						<p class="event__description-text card__text">
 							Maiores voluptas laboriosam non dolorum perferendis fuga
 							repellat aut. Blanditiis quos in minus. Voluptatum quia quia
 							voluptas voluptatem vero ex possimus. Iure et consectetur dolorem
@@ -312,7 +315,7 @@
 					<h3 class="countries__title">
 						Study in Australia
 					</h3>
-					<p class="countries__subtitle">
+					<p class="countries__subtitle card__text">
 						Ut aut corporis accusantium illo ullam qui laudantium.
 						Maxime rerum sunt et sequi sed qui rerum hic. Voluptatem maiores
 						voluptatum voluptate porro harum. Facilis voluptatum eum est.
@@ -325,7 +328,7 @@
 					<h3 class="countries__title">
 						Study in Canada
 					</h3>
-					<p class="countries__subtitle">
+					<p class="countries__subtitle card__text">
 						Ut aut corporis accusantium illo ullam qui laudantium.
 						Maxime rerum sunt et sequi sed qui rerum hic. Voluptatem maiores
 						voluptatum voluptate porro harum. Facilis voluptatum eum est.
@@ -338,7 +341,7 @@
 					<h3 class="countries__title">
 						Study in Canada
 					</h3>
-					<p class="countries__subtitle">
+					<p class="countries__subtitle card__text">
 						Ut aut corporis accusantium illo ullam qui laudantium.
 						Maxime rerum sunt et sequi sed qui rerum hic. Voluptatem maiores
 						voluptatum voluptate porro harum. Facilis voluptatum eum est.
@@ -404,7 +407,7 @@
 						<img class="people__img" src="img/testimonial_3.png" alt="face" width="62" height="62">
 						<div class="people__card">
 							<span class="people__name">Niek Bove</span>
-							<span class="people__proffesion">Senior Developer</span>
+							<span class="people__proffesion testimonial__text">Senior Developer</span>
 						</div>
 					</div>
 					<div class="testimonial__box">
@@ -437,40 +440,43 @@
 	<!-- Подвал -->
 
 	<footer class="footer">
-		<div class="footer__info">
-			<div class="logo logo__footer">
-				<img src="img/logo_white.png" alt="logo" width="160" height="57">
+		<div class="footer__wrapper">
+			<div class="footer__info">
+				<div class="logo logo__footer">
+					<img src="img/logo_white.png" alt="logo" width="160" height="57">
+				</div>
+				<address class="address">
+					<span class="address__text footer__text">
+						Concord Royal Court (3rd floor)
+					</span>
+					<!-- <br> -->
+					<span class="address__text footer__text">
+						Dhanmondi, Dhaka 1209, Bangladesh.
+					</span>
+				</address>
 			</div>
-			<address class="address">
-				<span class="address__text footer__text">
-					Concord Royal Court (3rd floor)
-				</span>
-				<span class="address__text footer__text">
-					Dhanmondi, Dhaka 1209, Bangladesh.
-				</span>
-			</address>
-			<div class="corporation">
-				<span class="footer__text">© 2020 Executive Trade International.</span>
+			<nav class="footer__nav">
+				<ul class="footer__menu">
+					<li><a class="footer__menu-item footer__text" href="#">About Us</a></li>
+					<li><a class="footer__menu-item footer__text" href="#">Responsibilities</a></li>
+					<li><a class="footer__menu-item footer__text" href="#">Our Services</a></li>
+					<li><a class="footer__menu-item footer__text" href="#">Contact</a></li>
+				</ul>
+				<ul class="footer__menu">
+					<li><a class="footer__menu-item footer__text" href="#">Disclaimer</a></li>
+					<li><a class="footer__menu-item footer__text" href="#">Testimonials</a></li>
+					<li><a class="footer__menu-item footer__text" href="#">Privacy Policy</a></li>
+					<li><a class="footer__menu-item footer__text" href="#">Terms of Service</a></li>
+				</ul>
+			</nav>
+			<div class="footer__social">
+				<img class="footer__icon" src="img/icon/facebook_white.svg" alt="facebook" width="9" height="16">
+				<img class="footer__icon" src="img/icon/twitter_white.svg" alt="twitter" width="16" height="14">
+				<img class="footer__icon" src="img/icon/instagram_white.svg" alt="instagram" width="16" height="16">
 			</div>
 		</div>
-		<nav class="footer__nav">
-			<div class="footer__menu">
-				<a class="footer__menu-item footer__text" href="#">About Us</a>
-				<a class="footer__menu-item footer__text" href="#">Responsibilities</a>
-				<a class="footer__menu-item footer__text" href="#">Our Services</a>
-				<a class="footer__menu-item footer__text" href="#">Contact</a>
-			</div>
-			<div class="footer__menu">
-				<a class="footer__menu-item footer__text" href="#">Disclaimer</a>
-				<a class="footer__menu-item footer__text" href="#">Testimonials</a>
-				<a class="footer__menu-item footer__text" href="#">Privacy Policy</a>
-				<a class="footer__menu-item footer__text" href="#">Terms of Service</a>
-			</div>
-		</nav>
-		<div class="footer__social">
-			<img class="footer__icon" src="img/icon/facebook_white.svg" alt="facebook" width="9" height="16">
-			<img class="footer__icon" src="img/icon/twitter_white.svg" alt="twitter" width="16" height="14">
-			<img class="footer__icon" src="img/icon/instagram_white.svg" alt="instagram" width="16" height="16">
+		<div class="corporation">
+			<span class="footer__text">© 2020 Executive Trade International.</span>
 		</div>
 	</footer>
 </body>

@@ -3,14 +3,20 @@ body {
 	font-family: 'Abel', sans-serif;
 	font-style: normal;
 	font-weight: 400;
-}
-.wrapper {
-	max-width: 1440px;
-	margin: 0 auto;
+	margin: 0;
+	padding: 0;
 }
 .main {
-	padding: 40px 150px;
+	overflow: hidden;
 }
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.background-grey {
+	background-color: #FAFAFA;
+}
+
 .menu__item {
 	font-size: 17px;
 	color: #373737;
@@ -23,6 +29,11 @@ body {
 .banner__title--violet {
 	color: #717CFF;
 }
+.banner__subtitle {
+	width: 90%;
+	/* text-align: left; */
+}
+
 .button {
 	background-color: #717CFF;
 	border: none;
@@ -37,15 +48,34 @@ body {
 	font-size: 22px;
 	color: #FFFFFF;
 }
+
 .banner__img--girl {
-	background-image: url(../img/Oval.png);
-	background-position: 1;
+	position: relative;
+	z-index: 2;
+	padding-bottom: 0px;
+}
+.banner__img--oval {
+	position: absolute;
+	z-index: 0;
+	right: -600px;
+	bottom: -95px;
+}
+.banner {
+	position: relative;
+}
+.wrapper {
+	overflow: hidden;
 }
 .featured__title {
 	font-size: 23px;
 	color: #373737;
 	text-transform: uppercase;
 	text-align: center;
+	margin: 0px;
+	letter-spacing: 2.1px;
+}
+.featured__img {
+	max-width: 100%;
 }
 .title {
 	font-size: 37px;
@@ -55,7 +85,16 @@ body {
 .subtitle {
 	font-size: 22px;
 	color: #7D7D7D;
+	width: 80%;
 	text-align: center;
+	margin: 0 auto;
+	line-height: 38px;
+}
+.subtitle__left {
+	text-align: left;
+	font-size: 22px;
+	color: #7D7D7D;
+	line-height: 38px;
 }
 .banner__subtitle {
 	text-align: left;
@@ -81,6 +120,11 @@ body {
 .news__title {
 	font-size: 22px;
 	color: #252525;
+}
+.news__text {
+	font-size: 22px;
+	color: #252525;
+	line-height: 28px;
 }
 .news__img {
 	margin-bottom: 28px;
@@ -143,4 +187,96 @@ body {
 	border: #717CFF solid 2px;
 	border-radius: 11px;
 	padding: 10px 38px;
+}
+
+/* Отступы */
+.header {
+	padding-top: 40px;
+}
+.banner {
+	padding-top: 125px;
+}
+.social__icon {
+	padding-right: 1%;
+}
+.social {
+	padding-bottom: 4%;
+}
+.featured {
+	padding: 55px 0px 100px 0px;
+}
+.featured__title {
+	margin-bottom: 85px;
+}
+.services__header {
+	padding-top: 120px;
+}
+.services__wrapper {
+	padding-top: 120px;
+	padding-bottom: 125px;
+}
+.services__card {
+	box-shadow: 0px 0px 77px rgba(0, 0, 0, 0.06);
+	border-radius: 15px;
+	padding: 30px;
+	margin-bottom: 50px;
+}
+.news__title {
+	padding-top: 100px;
+	padding-bottom: 120px;
+}
+.news__card {
+	background-color: #FFFFFF;
+	box-shadow: 0px 6px 42px rgba(0, 0, 0, 0.103884);
+	border-radius: 10px;
+}
+.date__wrapper {
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.news__button {
+	padding-top: 145px;
+	padding-bottom: 125px;
+}
+.event__title {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.event__card {
+	padding: 30px;
+	box-shadow: 0px 0px 77px rgba(0, 0, 0, 0.06);
+	border-radius: 15px;
+}
+.event__wrapper {
+	padding-bottom: 200px;
+}
+.countries__title {
+	padding-top: 80px;
+	padding-bottom: 77px;
+}
+.countries__text {
+	font-size: 25px;
+}
+.countries__wrapper {
+	padding-bottom: 200px;
+}
+.countries__card {
+	max-width: 350px;
+}
+.testimonial__title {
+	padding-top: 115px;
+	padding-bottom: 180px;
+}
+.testimonial__card {
+	margin-left: 60px;
+	padding: 35px;
+	box-shadow: 0px 0px 77px rgba(0, 0, 0, 0.06);
+	border-radius: 29px;
+}
+.testimonial__wrapper {
+	padding-bottom: 195px;
+}
+.action {
+	padding-top: 95px;
+	padding-bottom: 85px;
 }

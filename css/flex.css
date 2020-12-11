@@ -25,6 +25,7 @@
 .featured__slider {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 .services__wrapper {
 	display: flex;
@@ -44,10 +45,10 @@
 	display: flex;
 	justify-content: space-between;
 }
-.news__card {
+/* .news__card {
 	width: 344px;
 	height: 406px;
-}
+} */
 
 .event__wrapper {
 	display: flex;

@@ -16,25 +16,77 @@ body {
 .background-grey {
 	background-color: #FAFAFA;
 }
-
+/*  Стили для меню */
 .menu__item {
 	font-size: 17px;
 	color: #373737;
 	list-style-type: none;
+	text-decoration: none;
 }
+.menu__item--underline {
+	margin-right: 82px;
+	position: relative;
+}
+
+/* Анимация при наведении на ссылку */
+.menu__item--underline::before {
+	content: '';
+    bottom: -15px;
+    left: 10%;
+    position: absolute;
+    width: 0%;
+    height: 3px;
+	 background-color: #717CFF;
+	 transition: 0.2s;
+}
+.menu__item--underline:hover::before {
+	width: 70%;
+}
+
+
+.header__button {
+	border: #717CFF solid 2px;
+	border-radius: 11px;
+	padding: 9px 38px;
+}
+
+/* Анимация при наведении на кнопку */
+.header__button:hover {
+	background-color: #717CFF;
+}
+
+
+.menu__list {
+	flex-basis: 92%;
+	justify-content: space-between;
+	padding-bottom: 16px;
+}
+
+/* Стили для баннера с картинкой */
 .banner__title {
 	font-size: 56px;
+	font-weight: normal;
 	color: #2F2F2F;
+	margin-top: 13px;
+	margin-bottom: 0px;
 }
 .banner__title--violet {
 	color: #717CFF;
 }
 .banner__subtitle {
-	width: 90%;
-	/* text-align: left; */
+	width: 86%;
 }
-
+.subtitle__left {
+	text-align: left;
+	font-size: 22px;
+	color: #7D7D7D;
+	line-height: 38px;
+	margin: 27px 0px 8px 0px;
+}
 .button {
+	font-family: 'Abel';
+	font-size: 22px;
+	font-weight: normal;
 	background-color: #717CFF;
 	border: none;
 	border-radius: 11px;
@@ -50,14 +102,16 @@ body {
 }
 
 .banner__img--girl {
+	/* max-width: 100%;
+	height: ; */
 	position: relative;
 	z-index: 2;
-	padding-bottom: 0px;
+	padding-right: 35px;
 }
 .banner__img--oval {
 	position: absolute;
 	z-index: 0;
-	right: -600px;
+	right: -560px;
 	bottom: -95px;
 }
 .banner {
@@ -90,16 +144,8 @@ body {
 	margin: 0 auto;
 	line-height: 38px;
 }
-.subtitle__left {
-	text-align: left;
-	font-size: 22px;
-	color: #7D7D7D;
-	line-height: 38px;
-}
-.banner__subtitle {
-	text-align: left;
-	line-height: 38px;
-}
+
+
 .card__title {
 	font-size: 24px;
 	color: #37474F;
@@ -176,18 +222,8 @@ body {
 .footer__icon {
 	margin-right: 28px;
 }
-.menu__item--underline {
-	margin-left: 7%;
-}
-.menu__list {
-	flex-basis: 90%;
-	justify-content: space-between;
-}
-.header__button {
-	border: #717CFF solid 2px;
-	border-radius: 11px;
-	padding: 10px 38px;
-}
+
+
 
 /* Отступы */
 .header {

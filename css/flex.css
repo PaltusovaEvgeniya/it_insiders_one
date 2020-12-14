@@ -17,6 +17,11 @@
 	justify-content: space-around;
 	align-items: center;
 }
+.button {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
 .banner__wrapper {
 	display: flex;
 	flex-direction: column;
@@ -26,6 +31,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	flex-wrap: wrap;
 }
 .services__wrapper {
 	display: flex;
@@ -45,10 +51,9 @@
 	display: flex;
 	justify-content: space-between;
 }
-/* .news__card {
-	width: 344px;
-	height: 406px;
-} */
+.news__card {
+	flex-basis: 31%;
+}
 
 .event__wrapper {
 	display: flex;

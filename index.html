@@ -9,7 +9,8 @@
 	<link rel="stylesheet" type="text/css" href="css/fonts.css">
 	<link rel="stylesheet" type="text/css" href="css/flex.css">
 	<link rel="stylesheet" type="text/css" href="css/media.css">
-	<link href="sprite.svg">
+	<link rel="stylesheet" href="swiper/swiper-bundle.min.css">
+
 	<!-- <svg width="0" height="0" class="hidden">
 		<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 76" id="services_1">
 			<rect width="76" height="76" rx="38" fill="#717CFF"></rect>
@@ -71,13 +72,25 @@
 							</div>
 							<button class="button banner__button">
 								<span class="button__text">Apply Online</span>
-								<img  class="button__arrow" src="img/icon/arrow.svg" alt="arrow" width="18" height="16">
+								<!-- <img  class="button__arrow" src="img/icon/arrow.svg" alt="arrow" width="18" height="16"> -->
+								<svg class="button__arrow" width="18" height="16">
+									<use xlink:href="sprite.svg#arrow"></use>
+								</svg>
 							</button>
 						</div>
 						<div class="social">
-							<img class="social__icon social__icon--fb" src="img/icon/facebook.svg" alt="facebook" width="11" height="20">
+							<!-- <img class="social__icon social__icon--fb" src="img/icon/facebook.svg" alt="facebook" width="11" height="20">
 							<img class="social__icon social__icon--twitter" src="img/icon/twitter.svg" alt="twitter" width="21" height="18">
-							<img class="social__icon social__icon--inst" src="img/icon/instagram.svg" alt="instagram" width="21" height="22">
+							<img class="social__icon social__icon--inst" src="img/icon/instagram.svg" alt="instagram" width="21" height="22"> -->
+							<svg class="social__icon social__icon--fb" width="11" height="20">
+								<use xlink:href="sprite.svg#facebook"></use>
+							</svg>
+							<svg class="social__icon social__icon--twitter" width="21" height="18">
+								<use xlink:href="sprite.svg#twitter"></use>
+							</svg>
+							<svg class="social__icon social__icon--inst" width="21" height="22">
+								<use xlink:href="sprite.svg#instagram"></use>
+							</svg>
 						</div>
 					</div>
 					<picture class="banner__img">
@@ -94,16 +107,31 @@
 			<div class="wrapper background-grey">
 				<section class="featured container">
 					<p class="featured__title">Featured Universities</p>
-					<div class="featured__slider">
+					<!-- <div class="featured__slider">
 						<img class="featured__img" src="img/featured_1.png" alt="featured" width="225" height="68">
 						<img class="featured__img" src="img/featured_2.png" alt="featured" width="250" height="64">
 						<img class="featured__img" src="img/featured_3.png" alt="featured" width="224" height="79">
 						<img class="featured__img" src="img/featured_4.png" alt="featured" width="275" height="62">
-					</div>
+					</div> -->
 					<!-- <div class="featured__curcle">
 						<div class="featured__circule--purple"></div>
 						<div class="featured__circule--grey"></div>
 					</div> -->
+					<div class="swiper-container">
+						<!-- Additional required wrapper -->
+						<div class="swiper-wrapper">
+							<!-- Slides -->
+							<img class="swiper-slide featured__img" src="img/featured_1.png" width="225" height="68"></img>
+							<img class="swiper-slide featured__img" src="img/featured_2.png" width="225" height="68"></img>
+							<img class="swiper-slide featured__img" src="img/featured_3.png" width="225" height="68"></img>
+							<img class="swiper-slide featured__img" src="img/featured_4.png" width="225" height="68"></img>
+							<img class="swiper-slide featured__img" src="img/featured_1.png" width="225" height="68"></img>
+							<img class="swiper-slide featured__img" src="img/featured_2.png" width="225" height="68"></img>
+							<img class="swiper-slide featured__img" src="img/featured_3.png" width="225" height="68"></img>
+							<img class="swiper-slide featured__img" src="img/featured_4.png" width="225" height="68"></img>
+							...
+						</div>
+					</div>
 				</section>
 			</div>
 			<!-- Наши услуги -->
@@ -121,8 +149,8 @@
 						<article class="services__card">
 							<div class="card">
 								<div class="card__mobile">
-									<svg class="icon">
-										<use x="10" y="10" xlink:href="sprite.svg#services_1"></use>
+									<svg class="icon services1" width="30" height="30">
+										<use xlink:href="sprite.svg#services1"></use>
 									</svg>
 									<h3 class="card__title">Career Counselling</h3>
 								</div>
@@ -132,14 +160,20 @@
 								</p>
 								<div class="button-more">
 									<a class="button-more__link" href="#">Learn more</a>
-									<img class="button-more__img" src="img/icon/arrow.svg" alt="arrow" width="24" height="24">
+									<!-- <img class="button-more__img" src="img/icon/arrow.svg" alt="arrow" width="24" height="24"> -->
+									<svg class="button__arrow" width="18" height="16">
+										<use xlink:href="sprite.svg#arrow"></use>
+									</svg>
 								</div>
 							</div>
 						</article>
 						<article class="services__card">
 							<div class="card">
 								<div class="card__mobile">
-									<img class="card__img" src="img/icon/services_2.svg" alt="icon" width="76" height="76">
+									<!-- <img class="card__img" src="img/icon/services_2.svg" alt="icon" width="76" height="76"> -->
+									<svg class="icon services2">
+										<use xlink:href="sprite.svg#services2"></use>
+									</svg>
 									<h3 class="card__title">University Admissions</h3>
 								</div>
 								<p class="card__text">Maiores voluptas laboriosam non dolorum perferendis fuga repellat aut. Blanditiis
@@ -148,14 +182,20 @@
 								</p>
 								<div class="button-more">
 									<a class="button-more__link" href="#">Learn more</a>
-									<img class="button-more__img" src="img/icon/arrow.svg" alt="arrow" width="24" height="24">
+									<!-- <img class="button-more__img" src="img/icon/arrow.svg" alt="arrow" width="24" height="24"> -->
+									<svg class="button__arrow" width="18" height="16">
+										<use xlink:href="sprite.svg#arrow"></use>
+									</svg>
 								</div>
 							</div>
 						</article>
 						<article class="services__card">
 							<div class="card">
 								<div class="card__mobile">
-									<img class="card__img" src="img/icon/services_3.svg" alt="icon" width="76" height="76">
+									<!-- <img class="card__img" src="img/icon/services_3.svg" alt="icon" width="76" height="76"> -->
+									<svg class="icon services3">
+										<use xlink:href="sprite.svg#services3"></use>
+									</svg>
 									<h3 class="card__title">Visa Consultancy</h3>
 								</div>
 								<p class="card__text">Maiores voluptas laboriosam non dolorum perferendis fuga repellat aut.
@@ -164,14 +204,20 @@
 								</p>
 								<div class="button-more">
 									<a class="button-more__link" href="#">Learn more</a>
-									<img class="button-more__img" src="img/icon/arrow.svg" alt="arrow" width="24" height="24">
+									<!-- <img class="button-more__img" src="img/icon/arrow.svg" alt="arrow" width="24" height="24"> -->
+									<svg class="button__arrow" width="18" height="16">
+										<use xlink:href="sprite.svg#arrow"></use>
+									</svg>
 								</div>
 							</div>
 						</article>
 						<article class="services__card">
 							<div class="card">
 								<div class="card__mobile">
-									<img class="card__img" src="img/icon/services_4.svg" alt="icon" width="76" height="76">
+									<!-- <img class="card__img" src="img/icon/services_4.svg" alt="icon" width="76" height="76"> -->
+									<svg class="icon services4">
+										<use xlink:href="sprite.svg#services4"></use>
+									</svg>
 									<h3 class="card__title">Accommodation</h3>
 								</div>
 								<p class="card__text">Maiores voluptas laboriosam non dolorum perferendis fuga repellat aut.
@@ -180,14 +226,20 @@
 								</p>
 								<div class="button-more">
 									<a class="button-more__link" href="#">Learn more</a>
-									<img class="button-more__img" src="img/icon/arrow.svg" alt="arrow" width="24" height="24">
+									<!-- <img class="button-more__img" src="img/icon/arrow.svg" alt="arrow" width="24" height="24"> -->
+									<svg class="button__arrow" width="18" height="16">
+										<use xlink:href="sprite.svg#arrow"></use>
+									</svg>
 								</div>
 							</div>
 						</article>
 						<article class="services__card">
 							<div class="card">
 								<div class="card__mobile">
-									<img class="card__img" src="img/icon/services_5.svg" alt="icon" width="76" height="76">
+									<!-- <img class="card__img" src="img/icon/services_5.svg" alt="icon" width="76" height="76"> -->
+									<svg class="icon services5">
+										<use xlink:href="sprite.svg#services5"></use>
+									</svg>
 									<h3 class="card__title">Pre-Departure Briefing</h3>
 								</div>
 								<p class="card__text">Maiores voluptas laboriosam non dolorum perferendis fuga repellat aut.
@@ -196,7 +248,10 @@
 								</p>
 								<div class="button-more">
 									<a class="button-more__link" href="#">Learn more</a>
-									<img class="button-more__img" src="img/icon/arrow.svg" alt="arrow" width="24" height="24">
+									<!-- <img class="button-more__img" src="img/icon/arrow.svg" alt="arrow" width="24" height="24"> -->
+									<svg class="button__arrow" width="18" height="16">
+										<use xlink:href="sprite.svg#arrow"></use>
+									</svg>
 								</div>
 							</div>
 						</article>
@@ -222,7 +277,10 @@
 							</picture>
 							<div class="date__wrapper">
 								<div class="date">
-									<img class="date__icon" src="img/icon/calendar.svg" alt="calendar" width="14" height="14">
+									<!-- <img class="date__icon" src="img/icon/calendar.svg" alt="calendar" width="14" height="14"> -->
+									<svg class="date__icon" width="14" height="14">
+										<use xlink:href="sprite.svg#calendar"></use>
+									</svg>
 									<span class="date__calendar">17 Apr 2020</span>
 								</div>
 								<div class="news__text">
@@ -237,7 +295,10 @@
 							</picture>
 							<div class="date__wrapper">
 								<div class="date">
-									<img class="date__icon" src="img/icon/calendar.svg" alt="calendar" width="14" height="14">
+									<!-- <img class="date__icon" src="img/icon/calendar.svg" alt="calendar" width="14" height="14"> -->
+									<svg class="date__icon" width="14" height="14">
+										<use xlink:href="sprite.svg#calendar"></use>
+									</svg>
 									<span class="date__calendar">17 Apr 2020</span>
 								</div>
 								<div class="news__text">
@@ -252,7 +313,10 @@
 							</picture>
 							<div class="date__wrapper">
 								<div class="date">
-									<img class="date__icon" src="img/icon/calendar.svg" alt="calendar" width="14" height="14">
+									<!-- <img class="date__icon" src="img/icon/calendar.svg" alt="calendar" width="14" height="14"> -->
+									<svg class="date__icon" width="14" height="14">
+										<use xlink:href="sprite.svg#calendar"></use>
+									</svg>
 									<span class="date__calendar">17 Apr 2020</span>
 								</div>
 								<div class="news__text">
@@ -264,7 +328,10 @@
 					<div class="news__button">
 						<button class="button button__small">
 							<span class="button__text">Join Here</span>
-							<img class="button__arrow" src="img/icon/arrow.svg" alt="arrow" width="18" height="16">
+							<!-- <img class="button__arrow" src="img/icon/arrow.svg" alt="arrow" width="18" height="16"> -->
+							<svg class="button__arrow" width="18" height="16">
+								<use xlink:href="sprite.svg#arrow"></use>
+							</svg>
 						</button>
 					</div>
 				</section>
@@ -306,10 +373,16 @@
 							<div class="event__link">
 								<div class="button-more">
 									<a class="button-more__link" href="#">Learn More</a>
-									<img class="button-more__img" src="img/icon/arrow.svg" alt="arrow" width="16" height="15">
+									<!-- <img class="button-more__img" src="img/icon/arrow.svg" alt="arrow" width="16" height="15"> -->
+									<svg class="button__arrow" width="18" height="16">
+										<use xlink:href="sprite.svg#arrow"></use>
+									</svg>
 								</div>
 								<div class="event__time">
-									<img class="event__time-icon" src="img/time.svg" alt="time" width="17" height="17">
+									<!-- <img class="event__time-icon" src="img/time.svg" alt="time" width="17" height="17"> -->
+									<svg class="event__time-icon" width="17" height="17">
+										<use xlink:href="sprite.svg#time"></use>
+									</svg>
 									<time class="event__time-text" >10:00 AM - 2:00 PM</time>
 								</div>
 							</div>
@@ -338,10 +411,16 @@
 							<div class="event__link">
 								<div class="button-more">
 									<a  class="button-more__link" href="#">Learn More</a>
-									<img class="button-more__img" src="img/icon/arrow.svg" alt="arrow" width="16" height="15">
+									<!-- <img class="button-more__img" src="img/icon/arrow.svg" alt="arrow" width="16" height="15"> -->
+									<svg class="button__arrow" width="18" height="16">
+										<use xlink:href="sprite.svg#arrow"></use>
+									</svg>
 								</div>
 								<div class="event__time">
-									<img class="event__time-icon" src="img/time.svg" alt="time" width="17" height="17">
+									<!-- <img class="event__time-icon" src="img/time.svg" alt="time" width="17" height="17"> -->
+									<svg class="event__time-icon" width="17" height="17">
+										<use xlink:href="sprite.svg#time"></use>
+									</svg>
 									<time class="event__time-text">10:00 AM - 2:00 PM</time>
 								</div>
 							</div>
@@ -540,11 +619,22 @@
 				</ul>
 			</nav>
 			<div class="footer__social">
-				<img class="footer__icon" src="img/icon/facebook_white.svg" alt="facebook" width="9" height="16">
+				<!-- <img class="footer__icon" src="img/icon/facebook_white.svg" alt="facebook" width="9" height="16">
 				<img class="footer__icon" src="img/icon/twitter_white.svg" alt="twitter" width="16" height="14">
-				<img class="footer__icon" src="img/icon/instagram_white.svg" alt="instagram" width="16" height="16">
+				<img class="footer__icon" src="img/icon/instagram_white.svg" alt="instagram" width="16" height="16"> -->
+				<svg class="footer__icon" width="9" height="16">
+					<use xlink:href="sprite.svg#facebook"></use>
+				</svg>
+				<svg class="footer__icon" width="16" height="14">
+					<use xlink:href="sprite.svg#twitter"></use>
+				</svg>
+				<svg class="footer__icon" width="16" height="16">
+					<use xlink:href="sprite.svg#instagram"></use>
+				</svg>
 			</div>
 		</div>
 	</footer>
+<script src="swiper/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

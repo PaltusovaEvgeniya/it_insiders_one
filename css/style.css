@@ -353,5 +353,12 @@ body {
 
 
 .icon {
-	display: inline;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+
+}
+.swiper-container {
+    width: 1200px;
+    height: 80px;
 }

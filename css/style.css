@@ -70,6 +70,8 @@ body {
 /* Анимация при наведении на кнопку */
 .header__button:hover {
 	background-color: #717CFF;
+	color: #fff;
+	transition: 0.5s;
 }
 
 
@@ -110,15 +112,37 @@ body {
 	width: 262px;
 	height: 64px;
 }
+.button__arrow {
+	margin-left: 20px;
+}
 .button:hover {
 	cursor: pointer;
+	background-color: #fff;
+	border: 2px solid #717CFF;
+	/* transition: 0.5s; */
+}
+.button:hover .button__text {
+	color: #373737;
+}
+.banner__button:hover .button__arrow {
+	margin-left: 70px;
+	transition: 0.8s;
 }
 .button__small {
 	width: 226px;
 }
+.button__small:hover .button__arrow {
+	margin-left: 50px;
+	transition: 0.8s;
+}
 .button__text {
 	font-size: 22px;
 	color: #FFFFFF;
+	margin-left: 30px;
+}
+.button__action:hover .button__arrow {
+	margin-left: 50px;
+	transition: 0.8s;
 }
 .banner__img {
 	display: flex;
@@ -172,6 +196,14 @@ body {
 .button-more__link {
 	font-size: 17px;
 	color: #717CFF;
+}
+.button-more:hover .button__arrow {
+	margin-left: 40px;
+	transition: 0.8s;
+}
+.button-more:hover .button-more__link {
+	text-shadow: 1px 1px 5px #7D7D7D;
+	transition: 0.8s;
 }
 .date__calendar {
 	font-size: 16px;
@@ -361,4 +393,48 @@ body {
 .swiper-container {
     width: 1200px;
     height: 80px;
+}
+
+
+/* Стилизация svg */
+
+.card__svg-container {
+	width: 76px;
+	height: 76px;
+	border-radius: 100%;
+}
+.services1 {
+	background-color: #717CFF;
+}
+.card__svg-container {
+	position: relative;
+}
+.icon {
+	position: absolute;
+	margin: auto;
+   left: 0;
+   top: 0;
+   bottom: 0;
+   right: 0;
+}
+.services2 {
+	background-color: #FF5959;
+}
+.services3 {
+	background-color: #70CE88;
+}
+.services4 {
+	background-color: #5C96FF;
+}
+.services5 {
+	background-color: #FA706C;
+}
+.footer__icon {
+	fill: #fff;
+}
+.social__icon:hover {
+	fill: #3C5B9A;
+}
+.date__icon {
+	fill: #565656;
 }

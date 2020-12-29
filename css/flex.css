@@ -12,14 +12,14 @@
 	display: flex;
 	justify-content: space-between;
 }
-.banner__button {
+/* .banner__button {
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
-}
+} */
 .button {
 	display: flex;
-	justify-content: space-around;
+	/* justify-content: center; */
 	align-items: center;
 }
 .banner__wrapper {

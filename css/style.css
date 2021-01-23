@@ -301,7 +301,7 @@ body {
 	padding-bottom: 10%;
 }
 .featured {
-	padding: 50px 0px 100px 0px;
+	padding: 50px 0px 60px 0px;
 }
 
 .featured__title {
@@ -395,7 +395,6 @@ body {
     height: 80px;
 }
 
-
 /* Стилизация svg */
 
 .card__svg-container {
@@ -438,3 +437,41 @@ body {
 .date__icon {
 	fill: #565656;
 }
+
+/* Слайдеры */
+
+.swiper-container {
+	padding-bottom: 80px;
+	max-width: 100%;
+}
+.swiper-container_2 {
+	position: relative;
+	padding-bottom: 140px;
+	margin-left: auto;
+   margin-right: auto;
+   position: relative;
+   overflow-x: hidden;
+   list-style: none;
+   z-index: 1;
+}
+/* .swiper-pagination {
+	bottom: 40px;
+} */
+.swiper-pagination-bullet {
+	width: 10px;
+	height: 10px;
+	background-color: rgba(124, 124, 124, 0.318837);
+	opacity: 1;
+}
+
+
+
+.swiper-pagination-bullet-active {
+	width: 14px;
+	height: 14px;
+	background: #717CFF;
+}
+
+/* .featured__img {
+	width: 100%;
+} */

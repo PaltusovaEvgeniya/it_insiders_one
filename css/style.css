@@ -437,6 +437,14 @@ body {
 .date__icon {
 	fill: #565656;
 }
+/* зеленая деталь позиционирование*/
+.testimonial {
+	position: relative;
+}
+.testimonial__green {
+	position: absolute;
+	bottom: 990px;
+}
 
 /* Слайдеры */
 
@@ -444,34 +452,23 @@ body {
 	padding-bottom: 80px;
 	max-width: 100%;
 }
-.swiper-container_2 {
-	position: relative;
-	padding-bottom: 140px;
-	margin-left: auto;
-   margin-right: auto;
-   position: relative;
-   overflow-x: hidden;
-   list-style: none;
-   z-index: 1;
-}
-/* .swiper-pagination {
-	bottom: 40px;
-} */
 .swiper-pagination-bullet {
 	width: 10px;
 	height: 10px;
 	background-color: rgba(124, 124, 124, 0.318837);
 	opacity: 1;
 }
-
-
-
 .swiper-pagination-bullet-active {
 	width: 14px;
 	height: 14px;
 	background: #717CFF;
 }
 
-/* .featured__img {
-	width: 100%;
-} */
+.swiper-container_2 {
+	position: relative;
+	padding-bottom: 100px;
+	width: 1200px;
+}
+.swiper-container_3 {
+	position: relative;
+}

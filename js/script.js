@@ -1,6 +1,6 @@
 var swiper = new Swiper('.swiper-container', {
 	direction: 'horizontal',
-	// loop: true,
+	loop: true,
 	slidesPerView: 2,
 	spaceBetween: 10,
 	// slidesPerGroup: 2,
@@ -36,6 +36,31 @@ var swiper2 = new Swiper('.swiper-container_2', {
 	direction: 'horizontal',
 	// loop: true,
 	slidesPerView: 2,
+	spaceBetween: 50,
+	pagination: {
+		el: '.swiper-pagination',
+		type: 'bullets',
+		clickable: true,
+	},
+});
+
+var swiper3 = new Swiper('.swiper-container_3', {
+	direction: 'horizontal',
+	// loop: true,
+	slidesPerView: 3,
+	spaceBetween: 50,
+	pagination: {
+		el: '.swiper-pagination',
+		type: 'bullets',
+		clickable: true,
+	},
+});
+
+
+var swiper4 = new Swiper('.swiper-container_4', {
+	direction: 'horizontal',
+	// loop: true,
+	slidesPerView: 1,
 	spaceBetween: 50,
 	pagination: {
 		el: '.swiper-pagination',

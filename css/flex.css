@@ -72,9 +72,9 @@
 	display: flex;
 	justify-content: space-between;
 }
-.testimonial__card {
+/* .testimonial__card {
 	flex-basis: 33%;
-}
+} */
 .action {
 	display: flex;
 	justify-content: space-between;

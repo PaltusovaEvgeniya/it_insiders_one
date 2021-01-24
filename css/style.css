@@ -359,18 +359,18 @@ body {
 .countries__wrapper {
 	padding-bottom: 200px;
 }
-.countries__card {
+/* .countries__card {
 	max-width: 350px;
-}
+} */
 .testimonial__title {
 	padding-top: 115px;
 	padding-bottom: 180px;
 }
 .testimonial__card {
-	margin-left: 60px;
+	/* margin-left: 60px; */
 	padding: 35px;
-	box-shadow: 0px 0px 77px rgba(0, 0, 0, 0.06);
-	border-radius: 29px;
+	/* box-shadow: 0px 0px 77px rgba(0, 0, 0, 0.06); */
+	/* border-radius: 29px; */
 }
 .testimonial__wrapper {
 	padding-bottom: 195px;
@@ -443,7 +443,7 @@ body {
 }
 .testimonial__green {
 	position: absolute;
-	bottom: 990px;
+	bottom: 650px;
 }
 
 /* Слайдеры */
@@ -468,7 +468,31 @@ body {
 	position: relative;
 	padding-bottom: 100px;
 	width: 1200px;
+	overflow: hidden;
 }
 .swiper-container_3 {
 	position: relative;
+	overflow: hidden;
+}
+
+.swiper-container_4 {
+	position: relative;
+}
+
+.testimonial__card {
+	width: 440px;
+	height: auto;
+}
+
+.event__card {
+	margin-left: 30px;
+	margin-top: 51px;
+}
+
+.pag__2 {
+	padding-bottom: 20px;
+}
+
+.pag__3 {
+	padding-bottom: 120px;
 }

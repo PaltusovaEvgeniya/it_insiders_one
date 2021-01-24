@@ -57,9 +57,9 @@
 	display: flex;
 	justify-content: space-between;
 }
-.event__card {
+/* .event__card {
 	flex-basis: 40%;
-}
+} */
 .event__info {
 	display: flex;
 	align-items: center;

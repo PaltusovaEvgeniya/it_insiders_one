@@ -73,11 +73,10 @@
 	.countries__wrapper {
 		padding-bottom: 100px;
 	}
-	.countries__card {
+	/* .countries__card {
 		max-width: 30%;
-		/* margin-right: 50px; */
 		flex-basis: 30%;
-	}
+	} */
 	.featured__img:last-child {
 		display: none;
 	}
@@ -102,9 +101,9 @@
 		padding-top: 50px;
 		padding-bottom: 50px;
 	}
-	.testimonial__card {
+	/* .testimonial__card {
 		margin-left: 30px;
-	}
+	} */
 
 }
 /* @media screen and (max-width: 992px) {
@@ -219,12 +218,12 @@
 	.countries__text {
     font-size: 20px;
 	}
-	.countries__card {
+	/* .countries__card {
     margin-right: 30px;
 	}
 	.countries__card:last-child {
 		margin-right: 0px;
-	}
+	} */
 	.card__text {
     font-size: 14px;
     text-align: justify;
@@ -233,13 +232,13 @@
 	.testimonial__title {
 		padding-top: 0px;
 	}
-	.testimonial__card:last-child {
+	/* .testimonial__card:last-child {
 		display: none;
 	}
 	.testimonial__card{
 		margin-right: 0px;
 		margin-left: 0px;
-	}
+	} */
 	.testimonial__wrapper {
     justify-content: space-around;
 	}
@@ -293,10 +292,6 @@
     top: 48px;
 	 width: 53%;
 	}
-	/* .banner__img--oval {
-    right: -288px;
-    top: 74px;
-	} */
 	.logo img {
 		width: 80%;
 		height: auto;
@@ -345,10 +340,10 @@
 	/* .event__wrapper {
 		flex-wrap: wrap;
 	} */
-	.event__card {
+	/* .event__card {
 		flex-basis: 37%;
 		padding: 20px;
-	}
+	} */
 	.event__location-text {
 		margin: 0;
 	}
@@ -374,10 +369,10 @@
 	.testimonial__text {
     	line-height: 21px;
 	}
-	.testimonial__card {
+	/* .testimonial__card {
 	 	flex-basis: 40%;
 		padding: 20px;
-	}
+	} */
 	.action__title {
     	font-size: 25px;
 	}
@@ -447,10 +442,10 @@
 	.event__location-text {
     	font-size: 20px;
 	}
-	.event__card {
+	/* .event__card {
 		flex-basis: 30%;
 		margin-left: 21px;
-	}
+	} */
 	.event__wrapper {
 	 	flex-direction: column;
     	align-items: center;
@@ -463,15 +458,15 @@
 	.event__time {
 		padding-bottom: 0%;
 	}
-	.event__card {
+	/* .event__card {
 		margin-bottom: 20px;
-	}
+	} */
 	.countries__wrapper {
     	display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
-	.countries__card {
+	/* .countries__card {
 		max-width: 80%;
 		margin: 0 auto;
 	}
@@ -480,13 +475,13 @@
 	}
 	.countries__card:nth-child(-n+2) {
 		margin-bottom: 20px;
-	}
+	} */
 	.testimonial__wrapper {
 		flex-direction: column;
 	}
-	.testimonial__card:first-child {
+	/* .testimonial__card:first-child {
 		margin-bottom: 20px;
-	}
+	} */
 	.logo__footer {
     width: 60%;
 	}
@@ -570,9 +565,9 @@
 		padding-top: 40px;
 		padding-bottom: 40px;
 	}
-	.event__card {
+	/* .event__card {
 		margin-left: 22px;
-	}
+	} */
 	.event__time-text {
     	font-size: 10px;
 	}
@@ -583,9 +578,9 @@
 		width: 17px;
 		height: 17px;
 	}
-	.countries__card {
+	/* .countries__card {
     	max-width: 100%;
-	}
+	} */
 	.testimonial__wrapper {
     	padding-bottom: 100px;
 	}

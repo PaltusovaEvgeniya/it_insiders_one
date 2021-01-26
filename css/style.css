@@ -342,12 +342,16 @@ body {
 	padding-bottom: 100px;
 }
 .event__card {
+	flex-basis: 43%;
 	padding: 30px;
 	box-shadow: 0px 0px 77px rgba(0, 0, 0, 0.06);
 	border-radius: 15px;
 }
 .event__wrapper {
 	padding-bottom: 200px;
+}
+.countries__card {
+	flex-basis: 31%;
 }
 .countries__title {
 	padding-top: 80px;
@@ -390,10 +394,7 @@ body {
 	height: 30px;
 
 }
-.swiper-container {
-    width: 1200px;
-    height: 80px;
-}
+
 
 /* Стилизация svg */
 
@@ -449,6 +450,10 @@ body {
 /* Слайдеры */
 
 .swiper-container {
+   width: 1200px;
+   height: 80px;
+}
+.swiper-container {
 	padding-bottom: 80px;
 	max-width: 100%;
 }
@@ -469,10 +474,18 @@ body {
 	padding-bottom: 100px;
 	width: 1200px;
 	overflow: hidden;
+	max-width: 100%;
+}
+.pag__2 {
+	padding-bottom: 20px;
+	width: 100%;
 }
 .swiper-container_3 {
 	position: relative;
 	overflow: hidden;
+}
+.pag__3 {
+	padding-bottom: 120px;
 }
 
 .swiper-container_4 {
@@ -480,20 +493,10 @@ body {
 }
 
 .testimonial__card {
-	width: 440px;
-	height: auto;
+	flex-basis: 33%;
 }
 
-.event__card {
+/* .event__card {
 	margin-left: 30px;
 	margin-top: 51px;
-}
-
-.pag__2 {
-	padding-bottom: 20px;
-	width: 100%;
-}
-
-.pag__3 {
-	padding-bottom: 120px;
-}
+} */

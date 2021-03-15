@@ -1,0 +1,37 @@
+.news {
+	padding-bottom: 124px;
+}
+	.news__wrapper {
+		@include flex-element;
+		margin-bottom: 145px;
+	}
+	.news__card {
+		max-width: 344px;
+		box-shadow: 0px 6px 42px rgba(0, 0, 0, 0.103884);
+		border-radius: 10px;
+		margin-right: 30px;
+	}
+	.news__text {
+		font-size: 22px;
+		color: #252525;
+	}
+	.news__date {
+		padding: 27px 27px 60px 27px;
+	}
+	.date {
+		margin-bottom: 16px;
+	}
+		.date__icon {
+			fill: #565656;
+			margin-right: 15px;
+			vertical-align: middle;
+		}
+		.date__calendar {
+			vertical-align: middle;
+		}
+		.news__button {
+			width: 226px;
+			height: 64px;
+			display: block;
+			margin: 0 auto;
+		}

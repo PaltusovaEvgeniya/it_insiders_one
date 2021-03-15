@@ -1,0 +1,120 @@
+//переменные
+$violet_color: #717CFF;
+$grey_color: #373737;
+$light_grey_color: #7D7D7D;
+$title_fz: 37px;
+$subtitle_fz: 22px;
+
+.header {
+	@include flex-element;
+	align-items: center;
+	padding-top: 50px;
+}
+.menu_list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	.header__button {
+		width: 111px;
+		height: 42px;
+		border: $violet_color solid 2px;
+		border-radius: 11px;
+		padding: 9px 38px;
+	}
+	.menu_item {
+		margin-left: 85px;
+	}
+		.menu_link {
+			color: $grey_color;
+		}
+	}
+
+
+.menu__item--underline {
+	position: relative;
+}
+	.menu__item--underline:before {
+		content: '';
+		position: absolute;
+		width: 0%;
+		height: 3px;
+		background-color: $violet_color;
+		transition: 0.2s;
+		bottom: -5px;
+	}
+	.menu__item--underline:hover::before {
+		width: 90%;
+}
+
+.banner {
+		overflow: hidden;
+	}
+	.banner__flex {
+	display: flex;
+	margin-top: 80px;
+	position: relative;
+	// height: 100vh  задать высоту блока 100%
+	}
+	.button {
+		padding-left: 35px;
+		margin-top: 20px;
+		background-color: $violet_color;
+		border: none;
+		border-radius: 11px;
+		font-size: 22px;
+		color: #fff;
+		text-align: left;
+	}
+	.banner__button {
+		width: 262px;
+		height: 64px;
+	}
+	.button__arrow {
+		margin-left: 50px;
+		fill: $grey_color;
+	}
+
+.banner {
+	&__content {
+		margin-top: 50px;
+	}
+	&__subtitle {
+		width: 82%;
+		font-size: 22px;
+		line-height: 38px;
+		color: $light_grey_color;
+		margin-top: 30px;
+	}
+	&__img--girl {
+		vertical-align: bottom;
+	}
+	&__title {
+		font-size: 56px;
+	}
+		&__violet {
+			color: $violet_color;
+		}
+}
+.social {
+	margin-top: 90px;
+	}
+	.social__icon {
+	fill: $grey_color;
+	margin-left: 20px;
+	}
+		.social__icon:hover {
+		fill: #3C5B9A;
+}
+
+.banner__oval {
+	position: absolute;
+	width: 1030px;
+	height: 581px;
+	left: 62%;
+   top: 39%;
+	background: linear-gradient(189.79deg, #8471FF 8.03%, #717CFF 53.55%);
+	opacity: 0.7;
+	border-radius: 50%;
+	z-index: -1;
+	// overflow: hidden;
+}

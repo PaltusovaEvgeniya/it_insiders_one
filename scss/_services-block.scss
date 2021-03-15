@@ -1,0 +1,62 @@
+.services__wrapper {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding-bottom: 50px;
+	.services__card {
+		flex-basis: 29%;
+		padding: 30px;
+		box-shadow: 0px 0px 77px rgba(0, 0, 0, 0.06);
+		border-radius: 15px;
+		margin-bottom: 50px;
+	}
+	.services__icon {
+		width: 76px;
+		height: 76px;
+		position: relative;
+		border-radius: 38px;
+	}
+	.services__icon--1 {
+		background-color: #717CFF;
+	}
+	.services__icon--2 {
+		background-color: #FF5959;
+	}
+	.services__icon--3 {
+		background-color: #70CE88;
+	}
+	.services__icon--4 {
+		background-color: #5C96FF;
+	}
+	.services__icon--5 {
+		background-color: #FA706C;
+	}
+}
+.icon {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	margin: auto;
+   left: 0;
+   top: 0;
+   bottom: 0;
+   right: 0;
+}
+.services__title {
+	font-size: 24px;
+	margin-top: 30px;
+}
+.services__text {
+	font-size: 16px;
+	line-height: 28px;
+	margin-top: 9px;
+	margin-bottom: 25px;
+}
+	.learn-more__link {
+		color: $violet_color;
+		font-size: 17px;
+	}
+	.arrow {
+		margin-left: 10px;
+		vertical-align: middle;
+	}

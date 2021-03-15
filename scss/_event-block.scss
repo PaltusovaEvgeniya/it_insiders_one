@@ -1,0 +1,46 @@
+.event__card {
+	max-width: 540px;
+	padding: 30px;
+	box-shadow: 0px 0px 77px rgba(0, 0, 0, 0.06);
+	border-radius: 15px;
+	margin-right: 30px;
+}
+	.event__info{
+		display: flex;
+		margin-bottom: 19px;
+	}
+		.event__date {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			width: 76px;
+			height: 76px;
+			border-radius: 11px;
+			background-color: rgba(113, 124, 255, 0.14);
+		}
+			.event__big-text {
+				font-size: 27px;
+				color: $violet_color;
+			}
+			.event__mini-text {
+				font-size: 18px;
+				color: $violet_color;
+			}
+		.event__location {
+			font-size: 24px;
+			color: $grey_color;
+			margin-left: 19px;
+		}
+		.event__description {
+			font-size: 16px;
+			line-height: 28px;
+			margin-bottom: 25px;
+		}
+		.event__link {
+			display: flex;
+			justify-content: space-between;
+		}
+			.learn-more__arrow, .event__time-icon {
+				vertical-align: middle;
+			}

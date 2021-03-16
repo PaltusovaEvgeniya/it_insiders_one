@@ -57,7 +57,6 @@ $subtitle_fz: 22px;
 	}
 	.button {
 		padding-left: 35px;
-		margin-top: 20px;
 		background-color: $violet_color;
 		border: none;
 		border-radius: 11px;
@@ -80,6 +79,7 @@ $subtitle_fz: 22px;
 	}
 	&__subtitle {
 		width: 82%;
+		margin-bottom: 20px;
 		font-size: 22px;
 		line-height: 38px;
 		color: $light_grey_color;

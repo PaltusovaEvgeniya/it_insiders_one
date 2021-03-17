@@ -50,7 +50,7 @@
   margin: 0 auto;
 }
 
-/* line 8, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+/* line 9, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
 .header {
   display: flex;
   justify-content: space-between;
@@ -58,14 +58,14 @@
   padding-top: 50px;
 }
 
-/* line 13, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+/* line 14, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
 .menu_list {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/* line 17, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+/* line 18, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
 .menu_list .header__button {
   width: 111px;
   height: 42px;
@@ -74,22 +74,22 @@
   padding: 9px 38px;
 }
 
-/* line 24, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+/* line 25, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
 .menu_list .menu_item {
   margin-left: 85px;
 }
 
-/* line 27, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+/* line 28, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
 .menu_list .menu_link {
   color: #373737;
 }
 
-/* line 33, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+/* line 34, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
 .menu__item--underline {
   position: relative;
 }
 
-/* line 36, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+/* line 37, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
 .menu__item--underline:before {
   content: '';
   position: absolute;
@@ -100,24 +100,24 @@
   bottom: -5px;
 }
 
-/* line 45, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+/* line 46, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
 .menu__item--underline:hover::before {
   width: 90%;
 }
 
-/* line 49, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+/* line 50, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
 .banner {
   overflow: hidden;
 }
 
-/* line 52, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+/* line 53, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
 .banner__flex {
   display: flex;
   margin-top: 80px;
   position: relative;
 }
 
-/* line 58, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+/* line 59, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
 .button {
   padding-left: 35px;
   background-color: #717CFF;
@@ -128,24 +128,25 @@
   text-align: left;
 }
 
-/* line 67, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+/* line 68, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
 .banner__button {
   width: 262px;
   height: 64px;
 }
 
-/* line 71, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+/* line 72, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
 .button__arrow {
   margin-left: 50px;
+  vertical-align: middle;
   fill: #373737;
 }
 
-/* line 77, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+/* line 79, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
 .banner__content {
   margin-top: 50px;
 }
 
-/* line 80, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+/* line 82, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
 .banner__subtitle {
   width: 82%;
   margin-bottom: 20px;
@@ -155,48 +156,234 @@
   margin-top: 30px;
 }
 
-/* line 88, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+/* line 90, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
 .banner__img--girl {
   vertical-align: bottom;
 }
 
-/* line 91, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+/* line 93, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
 .banner__title {
   font-size: 56px;
 }
 
-/* line 94, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+/* line 96, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
 .banner__violet {
   color: #717CFF;
 }
 
-/* line 98, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+/* line 100, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
 .social {
   margin-top: 90px;
 }
 
-/* line 101, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+/* line 103, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
 .social__icon {
   fill: #373737;
   margin-left: 20px;
 }
 
-/* line 105, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+/* line 107, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
 .social__icon:hover {
   fill: #3C5B9A;
 }
 
-/* line 109, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+/* line 111, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
 .banner__oval {
   position: absolute;
   width: 1030px;
   height: 581px;
-  left: 62%;
-  top: 39%;
+  left: 61%;
+  top: 28%;
   background: linear-gradient(189.79deg, #8471FF 8.03%, #717CFF 53.55%);
   opacity: 0.7;
   border-radius: 50%;
   z-index: -1;
+}
+
+@media screen and (max-width: 1200px) {
+  /* line 126, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+  .container {
+    max-width: 1000px;
+  }
+  /* line 129, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+  .menu_list .menu_item {
+    margin-left: 72px;
+  }
+  /* line 132, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+  .banner__img {
+    vertical-align: bottom;
+  }
+  /* line 135, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+  .social {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  /* line 140, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+  .container {
+    max-width: 860px;
+  }
+  /* line 143, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+  .menu_list .menu_item {
+    margin-left: 40px;
+  }
+  /* line 146, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+  .banner__title {
+    font-size: 46px;
+  }
+  /* line 149, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+  .banner__subtitle {
+    width: 87%;
+    font-size: 18px;
+    line-height: 35px;
+  }
+  /* line 154, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+  .banner__img--girl {
+    width: 400px;
+    height: auto;
+  }
+  /* line 158, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+  .banner__flex {
+    margin-top: 50px;
+  }
+  /* line 161, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+  .banner__button {
+    width: 240px;
+    height: 55px;
+  }
+  /* line 165, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+  .social {
+    margin-top: 30px;
+  }
+  /* line 168, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+  .social__icon--fb {
+    margin-left: 0px;
+  }
+  /* line 171, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+  .banner__subtitle {
+    margin-bottom: 15px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* line 178, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+  .container {
+    max-width: 700px;
+  }
+  /* line 181, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+  .header {
+    padding-top: 15px;
+  }
+  /* line 185, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+  .banner__flex {
+    margin-top: 0px;
+  }
+  /* line 188, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+  .banner__subtitle {
+    width: 100%;
+  }
+  /* line 191, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+  .banner__img--girl {
+    display: block;
+    width: 320px;
+    margin-top: 84px;
+  }
+  /* line 196, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+  .banner__oval {
+    left: 45%;
+  }
+  /* line 199, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+  .menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  /* line 205, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+  .container {
+    max-width: 370px;
+  }
+  /* line 208, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+  .banner__title {
+    width: 150%;
+  }
+  /* line 211, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+  .banner__subtitle {
+    line-height: 26px;
+    width: 114%;
+  }
+  /* line 215, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+  .social {
+    margin-top: 20px;
+  }
+  /* line 218, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+  .banner__img--girl {
+    width: 240px;
+    margin-top: 234px;
+    margin-top: 198px;
+  }
+  /* line 223, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+  .banner__oval {
+    left: 56%;
+    width: 675px;
+    height: 443px;
+  }
+  /* line 228, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+  .banner__button {
+    width: 200px;
+  }
+  /* line 231, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+  .button__arrow {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  /* line 237, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+  .container {
+    max-width: 350px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  /* line 243, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+  .container {
+    max-width: 280px;
+  }
+  /* line 246, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+  .banner__content {
+    margin-top: 25px;
+  }
+  /* line 249, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+  .banner__img--girl {
+    margin-top: 180px;
+  }
+  /* line 252, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+  .banner__title {
+    font-size: 38px;
+  }
+  /* line 255, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+  .banner__subtitle {
+    font-size: 16px;
+    width: 125%;
+  }
+  /* line 259, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+  .banner__button {
+    font-size: 16px;
+    width: 160px;
+    height: 50px;
+  }
+  /* line 264, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+  .button__arrow {
+    vertical-align: middle;
+    margin-left: 7px;
+  }
+  /* line 268, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_header.scss */
+  .banner__oval {
+    left: 59%;
+  }
 }
 
 @font-face {
@@ -215,20 +402,21 @@
 /* line 4, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_slider-university.scss */
 .featured__title {
   font-size: 23px;
+  letter-spacing: 2.1px;
   text-transform: uppercase;
   text-align: center;
   padding-top: 55px;
   color: #373737;
 }
 
-/* line 11, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_slider-university.scss */
+/* line 12, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_slider-university.scss */
 .featured__slider {
   margin-top: 80px;
   align-items: center;
   padding-bottom: 100px;
 }
 
-/* line 17, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_slider-university.scss */
+/* line 18, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_slider-university.scss */
 .swiper-container {
   width: 100%;
   height: 100%;
@@ -244,6 +432,9 @@
 
 /* line 6, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_services-block.scss */
 .services__wrapper .services__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   flex-basis: 29%;
   padding: 30px;
   box-shadow: 0px 0px 77px rgba(0, 0, 0, 0.06);
@@ -251,7 +442,7 @@
   margin-bottom: 50px;
 }
 
-/* line 13, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_services-block.scss */
+/* line 16, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_services-block.scss */
 .services__wrapper .services__icon {
   width: 76px;
   height: 76px;
@@ -259,32 +450,32 @@
   border-radius: 38px;
 }
 
-/* line 19, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_services-block.scss */
+/* line 22, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_services-block.scss */
 .services__wrapper .services__icon--1 {
   background-color: #717CFF;
 }
 
-/* line 22, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_services-block.scss */
+/* line 25, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_services-block.scss */
 .services__wrapper .services__icon--2 {
   background-color: #FF5959;
 }
 
-/* line 25, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_services-block.scss */
+/* line 28, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_services-block.scss */
 .services__wrapper .services__icon--3 {
   background-color: #70CE88;
 }
 
-/* line 28, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_services-block.scss */
+/* line 31, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_services-block.scss */
 .services__wrapper .services__icon--4 {
   background-color: #5C96FF;
 }
 
-/* line 31, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_services-block.scss */
+/* line 34, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_services-block.scss */
 .services__wrapper .services__icon--5 {
   background-color: #FA706C;
 }
 
-/* line 35, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_services-block.scss */
+/* line 38, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_services-block.scss */
 .icon {
   display: flex;
   align-items: center;
@@ -294,15 +485,16 @@
   top: 0;
   bottom: 0;
   right: 0;
+  fill: #37474F;
 }
 
-/* line 45, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_services-block.scss */
+/* line 49, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_services-block.scss */
 .services__title {
   font-size: 24px;
   margin-top: 30px;
 }
 
-/* line 49, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_services-block.scss */
+/* line 53, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_services-block.scss */
 .services__text {
   font-size: 16px;
   line-height: 28px;
@@ -310,16 +502,74 @@
   margin-bottom: 25px;
 }
 
-/* line 55, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_services-block.scss */
+/* line 59, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_services-block.scss */
 .learn-more__link {
   color: #717CFF;
   font-size: 17px;
 }
 
-/* line 59, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_services-block.scss */
+/* line 63, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_services-block.scss */
 .arrow {
   margin-left: 10px;
   vertical-align: middle;
+}
+
+@media screen and (max-width: 960px) {
+  /* line 69, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_services-block.scss */
+  .services__wrapper .services__card {
+    padding: 20px;
+  }
+  /* line 72, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_services-block.scss */
+  .services__wrapper .services__icon {
+    width: 70px;
+    height: 70px;
+  }
+  /* line 76, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_services-block.scss */
+  .services__title {
+    margin-top: 25px;
+  }
+  /* line 79, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_services-block.scss */
+  .services__text {
+    line-height: 25px;
+  }
+  /* line 82, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_services-block.scss */
+  .services__wrapper .services__card {
+    flex-basis: 31%;
+    margin-bottom: 40px;
+  }
+  /* line 86, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_services-block.scss */
+  .services__title {
+    margin-top: 15px;
+    font-size: 21px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  /* line 97, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_services-block.scss */
+  .subtitle {
+    line-height: 30px;
+    margin-bottom: 70px;
+  }
+  /* line 101, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_services-block.scss */
+  .services__wrapper {
+    flex-direction: column;
+  }
+  /* line 104, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_services-block.scss */
+  .services__card {
+    padding: 30px;
+  }
+  /* line 107, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_services-block.scss */
+  .services__wrapper .services__card {
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  /* line 112, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_services-block.scss */
+  .services__wrapper .services__icon {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 /* line 1, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_news-block.scss */
@@ -376,6 +626,13 @@
   height: 64px;
   display: block;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 320px) {
+  /* line 40, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_news-block.scss */
+  .news__button-arrow {
+    margin-left: 40px;
+  }
 }
 
 /* line 1, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_event-block.scss */
@@ -583,14 +840,109 @@
 }
 
 /* line 50, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_footer.scss */
+.address__mobile {
+  display: none;
+}
+
+/* line 53, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_footer.scss */
 .footer__nav {
   display: flex;
 }
 
-/* line 53, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_footer.scss */
+/* line 56, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_footer.scss */
 .corporation {
   display: block;
   margin-top: 40px;
+}
+
+@media screen and (max-width: 1200px) {
+  /* line 62, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_footer.scss */
+  .action {
+    padding: 80px 100px 70px 100px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  /* line 68, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_footer.scss */
+  .footer__menu {
+    margin-right: 49px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* line 74, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_footer.scss */
+  .action {
+    padding: 50px;
+  }
+  /* line 77, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_footer.scss */
+  .action__title {
+    font-size: 24px;
+  }
+  /* line 80, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_footer.scss */
+  .logo__footer {
+    margin-bottom: 15px;
+  }
+  /* line 83, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_footer.scss */
+  .footer__text {
+    font-size: 16px;
+  }
+  /* line 86, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_footer.scss */
+  .footer__icon {
+    margin-left: 10px;
+  }
+  /* line 89, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_footer.scss */
+  .footer__menu-item {
+    line-height: 35px;
+  }
+  /* line 92, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_footer.scss */
+  .bg-violet {
+    padding-top: 25px;
+    padding-bottom: 30px;
+  }
+  /* line 96, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_footer.scss */
+  .corporation {
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  /* line 102, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_footer.scss */
+  .action {
+    flex-direction: column;
+  }
+  /* line 105, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_footer.scss */
+  .action__title {
+    padding-bottom: 35px;
+  }
+  /* line 108, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_footer.scss */
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  /* line 112, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_footer.scss */
+  .footer__social {
+    margin-top: 20px;
+  }
+  /* line 115, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_footer.scss */
+  .footer__icon {
+    margin-bottom: 15px;
+  }
+  /* line 118, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_footer.scss */
+  .address {
+    display: none;
+  }
+  /* line 121, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_footer.scss */
+  .address__mobile {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  /* line 127, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_footer.scss */
+  .action {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

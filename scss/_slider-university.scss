@@ -13,9 +13,16 @@
 	margin-top: 80px;
 	align-items: center;
 	padding-bottom: 100px;
-	// position: relative;
+	justify-content: space-between;
 }
 .swiper-container {
    width: 100%;
    height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+	.featured__slider {
+   	margin-top: 50px;
+   	padding-bottom: 80px;
+	}
 }

@@ -414,12 +414,21 @@
   margin-top: 80px;
   align-items: center;
   padding-bottom: 100px;
+  justify-content: space-between;
 }
 
 /* line 18, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_slider-university.scss */
 .swiper-container {
   width: 100%;
   height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 24, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_slider-university.scss */
+  .featured__slider {
+    margin-top: 50px;
+    padding-bottom: 80px;
+  }
 }
 
 /* line 1, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_services-block.scss */
@@ -578,49 +587,54 @@
 }
 
 /* line 4, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_news-block.scss */
-.news__wrapper {
+.container__news {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-bottom: 145px;
 }
 
-/* line 8, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_news-block.scss */
+/* line 9, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_news-block.scss */
 .news__card {
-  max-width: 344px;
   box-shadow: 0px 6px 42px rgba(0, 0, 0, 0.103884);
   border-radius: 10px;
-  margin-right: 30px;
+  flex-basis: 28%;
 }
 
 /* line 14, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_news-block.scss */
+.news__img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 18, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_news-block.scss */
 .news__text {
   font-size: 22px;
   color: #252525;
 }
 
-/* line 18, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_news-block.scss */
+/* line 22, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_news-block.scss */
 .news__date {
   padding: 27px 27px 60px 27px;
 }
 
-/* line 21, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_news-block.scss */
+/* line 25, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_news-block.scss */
 .date {
   margin-bottom: 16px;
 }
 
-/* line 24, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_news-block.scss */
+/* line 28, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_news-block.scss */
 .date__icon {
   fill: #565656;
   margin-right: 15px;
   vertical-align: middle;
 }
 
-/* line 29, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_news-block.scss */
+/* line 33, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_news-block.scss */
 .date__calendar {
   vertical-align: middle;
 }
 
-/* line 32, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_news-block.scss */
+/* line 36, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_news-block.scss */
 .news__button {
   width: 226px;
   height: 64px;
@@ -628,29 +642,70 @@
   margin: 0 auto;
 }
 
+@media screen and (max-width: 1200px) {
+  /* line 44, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_news-block.scss */
+  .container__news {
+    justify-content: space-between;
+  }
+  /* line 47, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_news-block.scss */
+  .news__card {
+    flex-basis: 31%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* line 53, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_news-block.scss */
+  .news {
+    padding-bottom: 0px;
+  }
+  /* line 56, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_news-block.scss */
+  .news__date {
+    padding-bottom: 30px;
+  }
+  /* line 59, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_news-block.scss */
+  .news__text {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  /* line 64, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_news-block.scss */
+  .container__news {
+    flex-direction: column;
+  }
+  /* line 67, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_news-block.scss */
+  .news__card {
+    margin-bottom: 30px;
+  }
+  /* line 70, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_news-block.scss */
+  .news__card:nth-child(3) {
+    margin-bottom: 0px;
+  }
+}
+
 @media screen and (max-width: 320px) {
-  /* line 40, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_news-block.scss */
+  /* line 76, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_news-block.scss */
   .news__button-arrow {
     margin-left: 40px;
   }
 }
 
-/* line 1, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_event-block.scss */
+/* line 10, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_event-block.scss */
 .event__card {
-  max-width: 540px;
   padding: 30px;
   box-shadow: 0px 0px 77px rgba(0, 0, 0, 0.06);
   border-radius: 15px;
-  margin-right: 30px;
+  margin-bottom: 100px;
+  margin-top: 50px;
 }
 
-/* line 8, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_event-block.scss */
+/* line 21, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_event-block.scss */
 .event__info {
   display: flex;
   margin-bottom: 19px;
 }
 
-/* line 12, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_event-block.scss */
+/* line 25, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_event-block.scss */
 .event__date {
   display: flex;
   flex-direction: column;
@@ -662,57 +717,78 @@
   background-color: rgba(113, 124, 255, 0.14);
 }
 
-/* line 22, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_event-block.scss */
+/* line 35, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_event-block.scss */
 .event__big-text {
   font-size: 27px;
   color: #717CFF;
 }
 
-/* line 26, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_event-block.scss */
+/* line 39, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_event-block.scss */
 .event__mini-text {
   font-size: 18px;
   color: #717CFF;
 }
 
-/* line 30, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_event-block.scss */
+/* line 43, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_event-block.scss */
 .event__location {
   font-size: 24px;
   color: #373737;
   margin-left: 19px;
 }
 
-/* line 35, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_event-block.scss */
+/* line 48, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_event-block.scss */
 .event__description {
   font-size: 16px;
   line-height: 28px;
   margin-bottom: 25px;
 }
 
-/* line 40, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_event-block.scss */
+/* line 53, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_event-block.scss */
 .event__link {
   display: flex;
   justify-content: space-between;
 }
 
-/* line 44, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_event-block.scss */
+/* line 57, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_event-block.scss */
 .learn-more__arrow, .event__time-icon {
   vertical-align: middle;
 }
 
+@media screen and (max-width: 320px) {
+  /* line 62, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_event-block.scss */
+  .event__location {
+    font-size: 16px;
+  }
+  /* line 65, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_event-block.scss */
+  .event__date {
+    width: 70px;
+    height: 70px;
+  }
+  /* line 69, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_event-block.scss */
+  .event__link {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  /* line 73, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_event-block.scss */
+  .event__time {
+    margin-bottom: 20px;
+  }
+}
+
 /* line 1, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_slider-coutries.scss */
 .countries {
-  padding-bottom: 200px;
+  padding-bottom: 125px;
 }
 
 /* line 4, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_slider-coutries.scss */
 .countries__card {
-  max-width: 348px;
-  margin-right: 30px;
+  margin-bottom: 110px;
 }
 
-/* line 8, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_slider-coutries.scss */
+/* line 7, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_slider-coutries.scss */
 .countries__img {
   margin-bottom: 27px;
+  width: 100%;
 }
 
 /* line 11, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_slider-coutries.scss */
@@ -726,6 +802,13 @@
   line-height: 27px;
 }
 
+@media screen and (max-width: 1024px) {
+  /* line 20, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_slider-coutries.scss */
+  .countries {
+    padding-bottom: 80px;
+  }
+}
+
 /* line 1, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_testimonials-slider.scss */
 .testimonial__wrapper {
   padding-bottom: 196px;
@@ -733,7 +816,6 @@
 
 /* line 4, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_testimonials-slider.scss */
 .testimonial__slide {
-  max-width: 503px;
   padding: 35px;
 }
 
@@ -765,6 +847,17 @@
 /* line 25, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_testimonials-slider.scss */
 .people__proffesion {
   font-size: 18px;
+}
+
+@media screen and (max-width: 320px) {
+  /* line 30, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_testimonials-slider.scss */
+  .testimonial__wrapper {
+    padding-bottom: 150px;
+  }
+  /* line 33, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_testimonials-slider.scss */
+  .testimonial__slide {
+    padding: 10px;
+  }
 }
 
 /* line 1, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_footer.scss */
@@ -943,6 +1036,22 @@
     padding-right: 5px;
     padding-left: 5px;
   }
+}
+
+/* line 2, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_swiper-castomize.scss */
+.swiper-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: rgba(124, 124, 124, 0.318837);
+}
+
+/* line 8, ../../../../../../../../../../../../../Users/mojave/Desktop/it_insiders_one/scss/_swiper-castomize.scss */
+.swiper-pagination .swiper-pagination-bullet-active {
+  width: 14px;
+  height: 14px;
+  border-radius: 100%;
+  background: #717CFF;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -45,7 +45,9 @@ let { src, dest } = require('gulp'),
 	svgSprite = require("gulp-svg-sprite"),
 	ttf2woff = require("gulp-ttf2woff"),
 	ttf2woff2 = require("gulp-ttf2woff2"),
-	fonter = require("gulp-fonter");
+	fonter = require("gulp-fonter"),
+	cheerio = require("gulp-cheerio");
+
 
 
 
@@ -172,6 +174,14 @@ gulp.task('otf2ttf', function () {
 
 const sprite = () => {
 	return src([source_folder + '/sprite/*.svg'])
+		.pipe(cheerio({
+			run: function ($) {
+				$('[fill]').removeAttr('fill');
+				$('[stroke]').removeAttr('stroke');
+				$('[style]').removeAttr('style');
+			},
+			parserOptions: { xmlMode: true }
+		}))
 		.pipe(svgSprite({
 			mode: {
 				stack: {

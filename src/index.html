@@ -7,7 +7,7 @@
 	<link r​el​="​preload" ​href​="fonts/Abel-Regular.woff" ​a​s​="​font" ​>
 	<link r​el​="​preload" ​href​="fonts/Abel-Regular.woff2" ​a​s​="​font" ​>
 	<link rel="stylesheet" type="text/css" href="./css/swiper-bundle.min.css">
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/main.min.css">
 	<title>Executive study abroad</title>
 </head>
 
@@ -28,20 +28,28 @@
 					</picture>
 				</a>
 				<nav class="menu">
-					<li class="menu_list">
-						<ul class="menu_item menu__item--underline"><a href="#" class="menu_link">Home</a></ul>
-						<ul class="menu_item menu__item--underline"><a href="#" class="menu_link">About Us</a></ul>
-						<ul class="menu_item menu__item--underline"><a href="#" class="menu_link">Our Services</a></ul>
-						<ul class="menu_item menu__item--underline"><a href="#" class="menu_link">Responsibilities</a></ul>
-						<ul class="menu_item menu__item--underline"><a href="#" class="menu_link">Country</a></ul>
-						<ul class="menu_item"><a href="" class="menu_link header__button">Apply</a></ul>
-					</li>
-					<div class="menu__burger">
-						<ul class="menu_item"><a href="#" class="menu_link">Home</a></ul>
-						<ul class="menu_item__burger"><a href="#" class="menu_link">About Us</a></ul>
-						<ul class="menu_item__burger"><a href="#" class="menu_link">Our Services</a></ul>
-						<ul class="menu_item__burger"><a href="#" class="menu_link">Responsibilities</a></ul>
-						<ul class="menu_item__burger"><a href="#" class="menu_link">Country</a></ul>
+					<ul class="menu_list">
+						<li class="menu_item menu__item--underline"><a href="#" class="menu_link">Home</a></li>
+						<li class="menu_item menu__item--underline"><a href="#" class="menu_link">About Us</a></li>
+						<li class="menu_item menu__item--underline"><a href="#" class="menu_link">Our Services</a></li>
+						<li class="menu_item menu__item--underline"><a href="#" class="menu_link">Responsibilities</a></li>
+						<li class="menu_item menu__item--underline"><a href="#" class="menu_link">Country</a></li>
+						<li class="menu_item"><a href="" class="menu_link header__button">Apply</a></li>
+					</ul>
+				</nav>
+				<nav class="menu__mobile">
+					<div class="hamburger-menu">
+						<input id="menu__toggle" type="checkbox" />
+						<label class="menu__btn" for="menu__toggle">
+							<span></span>
+						</label>
+						<ul class="menu__box">
+							<li><a class="menu__item" href="#">Home</a></li>
+							<li><a class="menu__item" href="#">About Us</a></li>
+							<li><a class="menu__item" href="#">Our Services</a></li>
+							<li><a class="menu__item" href="#">Responsibilities</a></li>
+							<li><a class="menu__item" href="#">Country</a></li>
+						</ul>
 					</div>
 				</nav>
 			</header>

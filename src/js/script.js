@@ -1,4 +1,15 @@
-var swiper = new Swiper('.swiper-container.swiper-container__featured', {
+// import Swiper from 'swiper';
+
+// import '../../node_modules/swiper/swiper-bundle.css';
+// import SwiperCore, { Navigation, Pagination } from 'swiper/core';
+
+// SwiperCore.use([Navigation, Pagination]);
+
+
+// import Swiper from 'swiper/bundle';
+
+
+const swiper = new Swiper('.swiper-container.swiper-container__featured', {
 	direction: 'horizontal',
 	slidesPerView: "2",
 	spaceBetween: 15,
@@ -21,7 +32,7 @@ var swiper = new Swiper('.swiper-container.swiper-container__featured', {
 });
 
 
-var swiper1 = new Swiper('.swiper-container.swiper-container__event', {
+const swiper1 = new Swiper('.swiper-container.swiper-container__event', {
 	direction: 'horizontal',
 	slidesPerView: "1",
 	spaceBetween: 50,
@@ -37,7 +48,7 @@ var swiper1 = new Swiper('.swiper-container.swiper-container__event', {
 	}
 });
 
-var swiper2 = new Swiper('.swiper-container.swiper-container__countries', {
+const swiper2 = new Swiper('.swiper-container.swiper-container__countries', {
 	direction: 'horizontal',
 	slidesPerView: "1",
 	spaceBetween: 50,
@@ -61,7 +72,7 @@ var swiper2 = new Swiper('.swiper-container.swiper-container__countries', {
 });
 
 
-var swiper3 = new Swiper('.swiper-container.swiper-container__testimonial', {
+const swiper3 = new Swiper('.swiper-container.swiper-container__testimonial', {
 	direction: 'horizontal',
 	slidesPerView: "1",
 	spaceBetween: 30,

@@ -6,8 +6,8 @@
 	<meta name="viewport" content="width=, initial-scale=1.0">
 	<link r​el​="​preload" ​href​="fonts/Abel-Regular.woff" ​a​s​="​font" ​>
 	<link r​el​="​preload" ​href​="fonts/Abel-Regular.woff2" ​a​s​="​font" ​>
+	<link rel="stylesheet" type="text/css" href="./css/swiper-bundle.min.css">
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="swiper/swiper-bundle.min.css">
 	<title>Executive study abroad</title>
 </head>
 
@@ -22,11 +22,10 @@
 		<div class="container">
 			<header class="header">
 				<a class="logo" href="#">
-					<img srcset="img/logo.png" alt="logo" width="146" height="52" class="logo__img">
-					<!-- <picture class="logo__img">
+					<picture class="logo__img">
 						<source srcset="img/logo.png, img/logo-retina.png 2x" class="logo__img">
 						<img srcset="img/logo.png" alt="logo" width="146" height="52" class="logo__img">
-					</picture> -->
+					</picture>
 				</a>
 				<nav class="menu">
 					<li class="menu_list">
@@ -37,6 +36,13 @@
 						<ul class="menu_item menu__item--underline"><a href="#" class="menu_link">Country</a></ul>
 						<ul class="menu_item"><a href="" class="menu_link header__button">Apply</a></ul>
 					</li>
+					<div class="menu__burger">
+						<ul class="menu_item"><a href="#" class="menu_link">Home</a></ul>
+						<ul class="menu_item__burger"><a href="#" class="menu_link">About Us</a></ul>
+						<ul class="menu_item__burger"><a href="#" class="menu_link">Our Services</a></ul>
+						<ul class="menu_item__burger"><a href="#" class="menu_link">Responsibilities</a></ul>
+						<ul class="menu_item__burger"><a href="#" class="menu_link">Country</a></ul>
+					</div>
 				</nav>
 			</header>
 		</div>
@@ -60,32 +66,32 @@
 							<button class="banner__button button">
 								Apply Online
 								<svg class="button__arrow" width="18" height="16">
-									<use xlink:href="sprite.svg#arrow"></use>
+									<use xlink:href="img/sprite/sprite.svg#arrow"></use>
 								</svg>
 							</button>
 						</div>
 						<div class="social">
 							<svg class="social__icon social__icon--fb social__icon--banner" width="11" height="20">
-								<use xlink:href="sprite.svg#facebook"></use>
+								<use xlink:href="img/sprite/sprite.svg#facebook"></use>
 							</svg>
 							<svg class="social__icon social__icon--twitter social__icon--banner" width="21" height="18">
-								<use xlink:href="sprite.svg#twitter_24px"></use>
+								<use xlink:href="img/sprite/sprite.svg#twitter"></use>
 							</svg>
 							<svg class="social__icon social__icon--inst social__icon--banner" width="21" height="22">
-								<use xlink:href="sprite.svg#instagram"></use>
+								<use xlink:href="img/sprite/sprite.svg#instagram"></use>
 							</svg>
 						</div>
 					</div>
-					<img class="banner__img--girl" src="img/banner.png" alt="banner" width="470" height="565">
-					<!-- <picture class="banner__img">
-						<source srcset="img/banner.png, img/girl-retina.png 2x" class="banner__img--girl">
-						<img class="banner__img--girl" src="img/banner.png" alt="banner" width="470" height="565">
-					</picture> -->
+					<picture class="banner__img">
+						<source srcset="./img/banner.png, ./img/girl-retina.png 2x" class="banner__img--girl">
+						<img class="banner__img--girl" src="./img/banner.png" alt="banner" width="470" height="565">
+					</picture>
 					<!-- фиолетовый овал отрисован при помощи css -->
 					<div class="banner__oval"></div>
 				</div>
 			</div>
 		</section>
+
 		<!-- Слайдер с логотипами университетов -->
 
 		<div class="bg-grey">
@@ -124,7 +130,7 @@
 					<article class="card services__card">
 						<div class="services__icon services__icon--1">
 							<svg class="icon" width="30" height="30">
-								<use xlink:href="sprite.svg#services1"></use>
+								<use xlink:href="img/sprite/sprite.svg#services1"></use>
 							</svg>
 						</div>
 						<h3 class="services__title">Career Counselling</h3>
@@ -135,14 +141,14 @@
 						<div class="learn-more">
 							<a class="learn-more__link" href="#">Learn more</a>
 							<svg class="button__arrow arrow" width="18" height="16">
-								<use xlink:href="sprite.svg#arrow"></use>
+								<use xlink:href="img/sprite/sprite.svg#arrow"></use>
 							</svg>
 						</div>
 					</article>
 					<article class="card services__card">
 						<div class="services__icon services__icon--2">
 							<svg class="icon" width="26" height="26" viewBox="0 0 37 37">
-								<use xlink:href="sprite.svg#services2"></use>
+								<use xlink:href="img/sprite/sprite.svg#services2"></use>
 							</svg>
 						</div>
 						<h3 class="services__title">University Admissions</h3>
@@ -154,14 +160,14 @@
 						<div class="learn-more">
 							<a class="learn-more__link" href="#">Learn more</a>
 							<svg class="button__arrow arrow" width="18" height="16">
-								<use xlink:href="sprite.svg#arrow"></use>
+								<use xlink:href="img/sprite/sprite.svg#arrow"></use>
 							</svg>
 						</div>
 					</article>
 					<article class="card services__card">
 						<div class="services__icon services__icon--3">
 							<svg class="icon" widht="22" height="29" viewBox="0 0 24 30">
-								<use xlink:href="sprite.svg#services3"></use>
+								<use xlink:href="img/sprite/sprite.svg#services3"></use>
 							</svg>
 						</div>
 						<h3 class="services__title">Visa Consultancy</h3>
@@ -172,14 +178,14 @@
 						<div class="learn-more">
 							<a class="learn-more__link" href="#">Learn more</a>
 							<svg class="button__arrow arrow" width="18" height="16">
-								<use xlink:href="sprite.svg#arrow"></use>
+								<use xlink:href="img/sprite/sprite.svg#arrow"></use>
 							</svg>
 						</div>
 					</article>
 					<article class="card services__card">
 						<div class="services__icon services__icon--4">
 							<svg class="icon" width="23" height="28">
-								<use xlink:href="sprite.svg#services4"></use>
+								<use xlink:href="img/sprite/sprite.svg#services4"></use>
 							</svg>
 						</div>
 						<h3 class="services__title">Accommodation</h3>
@@ -190,14 +196,14 @@
 						<div class="learn-more">
 							<a class="learn-more__link" href="#">Learn more</a>
 							<svg class="button__arrow arrow" width="18" height="16">
-								<use xlink:href="sprite.svg#arrow"></use>
+								<use xlink:href="img/sprite/sprite.svg#arrow"></use>
 							</svg>
 						</div>
 					</article>
 					<article class="card services__card">
 						<div class="services__icon services__icon--5">
 							<svg class="icon" width="26" height="18">
-								<use xlink:href="sprite.svg#services5"></use>
+								<use xlink:href="img/sprite/sprite.svg#services5"></use>
 							</svg>
 						</div>
 						<h3 class="services__title">Pre-Departure Briefing</h3>
@@ -208,7 +214,7 @@
 						<div class="learn-more">
 							<a class="learn-more__link" href="#">Learn more</a>
 							<svg class="button__arrow arrow" width="18" height="16">
-								<use xlink:href="sprite.svg#arrow"></use>
+								<use xlink:href="img/sprite/sprite.svg#arrow"></use>
 							</svg>
 						</div>
 					</article>
@@ -229,15 +235,14 @@
 					</div>
 					<section class="container__news">
 						<article class="card news__card">
-							<img srcset="img/card_news_1.png" alt="card" width="344" height="224" class="news__img">
-							<!-- <picture class="news__img">
-								<source srcset="img/card_news_1.png, img/retina/news-retina1.png 2x" class="news__img">
-								<img srcset="img/card_news_1.png" alt="card" width="344" height="224" class="news__img">
-							</picture> -->
+							<picture class="news__img">
+								<source srcset="./img/card_news_1.png, ./img/retina/news-retina1.png 2x" class="news__img">
+								<img srcset="./img/card_news_1.png" alt="card" width="344" height="224" class="news__img">
+							</picture>
 							<div class="news__date">
 								<div class="date">
 									<svg class="date__icon" width="14" height="14">
-										<use xlink:href="sprite.svg#calendar"></use>
+										<use xlink:href="img/sprite/sprite.svg#calendar"></use>
 									</svg>
 									<span class="date__calendar">17 Apr 2020</span>
 								</div>
@@ -247,14 +252,14 @@
 							</div>
 						</article>
 						<article class="card news__card">
-							<!-- <picture class="news__img"> -->
-								<!-- <source srcset="img/card_news_2.png, img/retina/news-retina2.png 2x" class="news__img"> -->
-							<img srcset="img/card_news_2.png" alt="card" width="344" height="224" class="news__img">
-							<!-- </picture> -->
+							<picture class="news__img">
+								<source srcset="./img/card_news_2.png, ./img/retina/news-retina2.png 2x" class="news__img">
+								<img srcset="./img/card_news_2.png" alt="card" width="344" height="224" class="news__img">
+							</picture>
 							<div class="news__date">
 								<div class="date">
 									<svg class="date__icon" width="14" height="14">
-										<use xlink:href="sprite.svg#calendar"></use>
+										<use xlink:href="img/sprite/sprite.svg#calendar"></use>
 									</svg>
 									<span class="date__calendar">17 Apr 2020</span>
 								</div>
@@ -264,14 +269,14 @@
 							</div>
 						</article>
 						<article class="card news__card">
-							<!-- <picture class="news__img"> -->
-								<!-- <source srcset="img/card_news_3.png, img/retina/news-retina3.png 2x" class="news__img"> -->
-							<img class="news__img" src="img/card_news_3.png" alt="card" width="344" height="224">
-							<!-- </picture> -->
+							<picture class="news__img">
+								<source srcset="./img/card_news_3.png, ./img/retina/news-retina3.png 2x" class="news__img">
+								<img class="news__img" src="img/card_news_3.png" alt="card" width="344" height="224">
+							</picture>
 							<div class="news__date">
 								<div class="date">
 									<svg class="date__icon" width="14" height="14">
-										<use xlink:href="sprite.svg#calendar"></use>
+										<use xlink:href="img/sprite/sprite.svg#calendar"></use>
 									</svg>
 									<span class="date__calendar">17 Apr 2020</span>
 								</div>
@@ -285,7 +290,7 @@
 				<button class="button news__button">
 					Join Here
 					<svg class="button__arrow news__button-arrow" width="18" height="16">
-						<use xlink:href="sprite.svg#arrow"></use>
+						<use xlink:href="img/sprite/sprite.svg#arrow"></use>
 					</svg>
 				</button>
 				</section>
@@ -327,12 +332,12 @@
 									<div class="learn-more">
 										<a class="learn-more__link" href="#">Learn More</a>
 										<svg class="learn-more__arrow" width="18" height="16">
-											<use xlink:href="sprite.svg#arrow"></use>
+											<use xlink:href="img/sprite/sprite.svg#arrow"></use>
 										</svg>
 									</div>
 									<div class="event__time">
 										<svg class="event__time-icon" width="17" height="17">
-											<use xlink:href="sprite.svg#time"></use>
+											<use xlink:href="img/sprite/sprite.svg#time"></use>
 										</svg>
 										<time class="event__time-text">10:00 AM - 2:00 PM</time>
 									</div>
@@ -360,12 +365,12 @@
 									<div class="learn-more">
 										<a class="learn-more__link" href="#">Learn More</a>
 										<svg class="learn__arrow" width="18" height="16">
-											<use xlink:href="sprite.svg#arrow"></use>
+											<use xlink:href="img/sprite/sprite.svg#arrow"></use>
 										</svg>
 									</div>
 									<div class="event__time">
 										<svg class="event__time-icon" width="17" height="17">
-											<use xlink:href="sprite.svg#time"></use>
+											<use xlink:href="img/sprite/sprite.svg#time"></use>
 										</svg>
 										<time class="event__time-text">10:00 AM - 2:00 PM</time>
 									</div>
@@ -393,12 +398,12 @@
 									<div class="learn-more">
 										<a class="learn-more__link" href="#">Learn More</a>
 										<svg class="learn__arrow" width="18" height="16">
-											<use xlink:href="sprite.svg#arrow"></use>
+											<use xlink:href="img/sprite/sprite.svg#arrow"></use>
 										</svg>
 									</div>
 									<div class="event__time">
 										<svg class="event__time-icon" width="17" height="17">
-											<use xlink:href="sprite.svg#time"></use>
+											<use xlink:href="img/sprite/sprite.svg#time"></use>
 										</svg>
 										<time class="event__time-text">10:00 AM - 2:00 PM</time>
 									</div>
@@ -426,12 +431,12 @@
 									<div class="learn-more">
 										<a class="learn-more__link" href="#">Learn More</a>
 										<svg class="learn__arrow" width="18" height="16">
-											<use xlink:href="sprite.svg#arrow"></use>
+											<use xlink:href="img/sprite/sprite.svg#arrow"></use>
 										</svg>
 									</div>
 									<div class="event__time">
 										<svg class="event__time-icon" width="17" height="17">
-											<use xlink:href="sprite.svg#time"></use>
+											<use xlink:href="img/sprite/sprite.svg#time"></use>
 										</svg>
 										<time class="event__time-text">10:00 AM - 2:00 PM</time>
 									</div>
@@ -458,12 +463,12 @@
 									<div class="learn-more">
 										<a class="learn-more__link" href="#">Learn More</a>
 										<svg class="learn__arrow" width="18" height="16">
-											<use xlink:href="sprite.svg#arrow"></use>
+											<use xlink:href="img/sprite/sprite.svg#arrow"></use>
 										</svg>
 									</div>
 									<div class="event__time">
 										<svg class="event__time-icon" width="17" height="17">
-											<use xlink:href="sprite.svg#time"></use>
+											<use xlink:href="img/sprite/sprite.svg#time"></use>
 										</svg>
 										<time class="event__time-text">10:00 AM - 2:00 PM</time>
 									</div>
@@ -493,11 +498,10 @@
 					<div class="swiper-container swiper-container__countries">
 						<div class="swiper-wrapper countries__wrapper">
 							<div class="swiper-slide countries__card">
-								<!-- <pictures class="countries__img"> -->
-									<!-- <source srcset="img/countries.png, img/retina/countries-retina1.png 2x" -->
-										<!-- class="countries__img"> -->
-								<img src="img/countries_1.png" alt="countries" width="348" height="215" class="countries__img">
-								<!-- </pictures> -->
+								<pictures class="countries__img">
+									<source srcset="./img/countries.png, ./img/retina/countries-retina1.png 2x" class="countries__img">
+									<img src="img/countries_1.png" alt="countries" width="348" height="215" class="countries__img">
+								</pictures>
 								<h3 class="countries__title">
 									Study in Australia
 								</h3>
@@ -508,11 +512,10 @@
 								</p>
 							</div>
 							<div class="swiper-slide countries__card">
-								<!-- <pictures class="countries__img">
-									<source srcset="img/countries_2.png, img/retina/countries-retina2.png 2x"
-										class="countries__img"> -->
-								<img srcset="img/countries_2.png" alt="countries" width="348" height="215" class="countries__img">
-								<!-- </pictures> -->
+								<pictures class="countries__img">
+									<source srcset="./img/countries_2.png, ./img/retina/countries-retina2.png 2x" class="countries__img">
+									<img srcset="./img/countries_2.png" alt="countries" width="348" height="215" class="countries__img">
+								</pictures>
 								<h3 class="countries__title">
 									Study in Canada
 								</h3>
@@ -523,11 +526,10 @@
 								</p>
 							</div>
 							<div class="swiper-slide countries__card">
-								<!-- <pictures class="countries__img">
-									<source srcset="img/countries_3.png, img/retina/countries-retina3.png 2x"
-										class="countries__img"> -->
-								<img srcset="img/countries_3.png" alt="countries" width="348" height="215" class="countries__img">
-									<!-- </pictires> -->
+								<pictures class="countries__img">
+									<source srcset="./img/countries_3.png, ./img/retina/countries-retina3.png 2x" class="countries__img">
+									<img srcset="img/countries_3.png" alt="countries" width="348" height="215" class="countries__img">
+								</pictires>
 								<h3 class="countries__title">
 									Study in Canada
 								</h3>
@@ -538,11 +540,10 @@
 								</p>
 							</div>
 							<div class="swiper-slide countries__card">
-								<!-- <pictures class="countries__img">
-									<source srcset="img/countries.png, img/retina/countries-retina1.png 2x"
-										class="countries__img"> -->
-								<img src="img/countries_1.png" alt="countries" width="348" height="215" class="countries__img">
-								<!-- </pictures> -->
+								<pictures class="countries__img">
+									<source srcset="./img/countries.png, ./img/retina/countries-retina1.png 2x" class="countries__img">
+									<img src="img/countries_1.png" alt="countries" width="348" height="215" class="countries__img">
+								</pictures>
 								<h3 class="countries__title">
 									Study in Australia
 								</h3>
@@ -553,11 +554,10 @@
 								</p>
 							</div>
 							<div class="swiper-slide countries__card">
-								<!-- <pictures class="countries__img">
-									<source srcset="img/countries_2.png, img/retina/countries-retina2.png 2x"
-										class="countries__img"> -->
-								<img srcset="img/countries_2.png" alt="countries" width="348" height="215" class="countries__img">
-								<!-- </pictures> -->
+								<pictures class="countries__img">
+									<source srcset="./img/countries_2.png, ./img/retina/countries-retina2.png 2x" class="countries__img">
+									<img srcset="./img/countries_2.png" alt="countries" width="348" height="215" class="countries__img">
+								</pictures>
 								<h3 class="countries__title">
 									Study in Canada
 								</h3>
@@ -568,11 +568,10 @@
 								</p>
 							</div>
 							<div class="swiper-slide countries__card">
-								<!-- <pictures class="countries__img">
-									<source srcset="img/countries_3.png, img/retina/countries-retina3.png 2x"
-										class="countries__img"> -->
-								<img srcset="img/countries_3.png" alt="countries" width="348" height="215" class="countries__img">
-									<!-- </pictires> -->
+								<pictures class="countries__img">
+									<source srcset="./img/countries_3.png, ./img/retina/countries-retina3.png 2x" class="countries__img">
+									<img srcset="img/countries_3.png" alt="countries" width="348" height="215" class="countries__img">
+								</pictires>
 								<h3 class="countries__title">
 									Study in Canada
 								</h3>
@@ -593,9 +592,6 @@
 
 		<section class="testimonial">
 			<div class="container">
-				<!-- <div class="testimonial__green">
-					<img src="img/green_detail.png" alt="green" width="196" height="1274">
-				</div> -->
 				<div class="block-title">
 					<h2 class="title">
 						Testimonial
@@ -714,7 +710,9 @@
 				</div>
 				<button class="button banner__button">
 					Apply Online
-					<img class="button__arrow" src="img/icon/arrow.svg" alt="arrow" width="18" height="16">
+					<svg class="learn__arrow" width="18" height="16">
+						<use xlink:href="img/sprite/sprite.svg#arrow"></use>
+					</svg>
 				</button>
 			</div>
 		</section>
@@ -756,13 +754,13 @@
 			</nav>
 			<div class="footer__social">
 				<svg class="footer__icon footer__icon--fb" width="9" height="16">
-					<use xlink:href="sprite.svg#facebook"></use>
+					<use xlink:href="img/sprite/sprite.svg#facebook"></use>
 				</svg>
 				<svg class="footer__icon" width="16" height="14">
-					<use xlink:href="sprite.svg#twitter_24px"></use>
+					<use xlink:href="img/sprite/sprite.svg#twitter"></use>
 				</svg>
 				<svg class="footer__icon" width="16" height="16">
-					<use xlink:href="sprite.svg#instagram"></use>
+					<use xlink:href="img/sprite/sprite.svg#instagram"></use>
 				</svg>
 				<address class="address__mobile">
 					<span class="address__text footer__text">
@@ -778,7 +776,7 @@
 			</div>
 		</div>
 	</footer>
-	<script src="swiper/swiper-bundle.min.js"></script>
+	<script src='./js/swiper-bundle.min.js'></script>
 	<script src="js/script.js"></script>
 </body>
 

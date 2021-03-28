@@ -1,5 +1,10 @@
 "use strict";
 
+// import Swiper from 'swiper';
+// import '../../node_modules/swiper/swiper-bundle.css';
+// import SwiperCore, { Navigation, Pagination } from 'swiper/core';
+// SwiperCore.use([Navigation, Pagination]);
+// import Swiper from 'swiper/bundle';
 var swiper = new Swiper('.swiper-container.swiper-container__featured', {
   direction: 'horizontal',
   slidesPerView: "2",

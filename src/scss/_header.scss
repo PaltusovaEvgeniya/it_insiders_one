@@ -11,6 +11,9 @@ $subtitle_fz: 22px;
 	align-items: center;
 	padding-top: 50px;
 }
+.menu__burger {
+	display: none;
+}
 .menu_list {
 	display: flex;
 	justify-content: space-between;

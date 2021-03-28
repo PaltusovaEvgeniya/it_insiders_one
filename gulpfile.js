@@ -156,8 +156,22 @@ gulp.task('otf2ttf', function () {
 		.pipe(dest(source_folder + '/fonts/'));
 })
 
-gulp.task('svgSprite', function () {
-	return gulp.src([source_folder + '/sprite/*.svg'])
+// gulp.task('svgSprite', function () {
+// 	return gulp.src([source_folder + '/sprite/*.svg'])
+// 		.pipe(svgSprite({
+// 			mode: {
+// 				stack: {
+// 					sprite: "../sprite/sprite.svg",
+// 					// example: true
+// 				}
+// 			},
+// 		}
+// 		))
+// 		.pipe(dest(path.build.img))
+// })
+
+const sprite = () => {
+	return src([source_folder + '/sprite/*.svg'])
 		.pipe(svgSprite({
 			mode: {
 				stack: {
@@ -168,7 +182,7 @@ gulp.task('svgSprite', function () {
 		}
 		))
 		.pipe(dest(path.build.img))
-})
+}
 
 function vendorJS() {
 	const modules = [
@@ -201,9 +215,12 @@ function clean() {
 }
 
 
-let build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts, vendorJS, vendorCSS));
+let build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts, vendorJS, vendorCSS, sprite));
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
+exports.sprite = sprite;
+exports.vendorCSS = vendorCSS;
+exports.vendvendorJS =vendorJS;
 exports.fonts = fonts;
 exports.images = images;
 exports.js = js;

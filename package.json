@@ -1,43 +1,55 @@
 {
-  "name": "it_insiders_copia",
+  "name": "supergym",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
+  "description": "Проект: Фитнес-центр - SuperGym ",
   "devDependencies": {
-    "browser-sync": "^2.26.14",
-    "del": "^6.0.0",
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^7.0.1",
-    "gulp-babel": "^8.0.0",
-    "gulp-clean-css": "^4.3.0",
-    "gulp-csso": "^4.0.1",
-    "gulp-file-include": "^2.3.0",
-    "gulp-fonter": "^0.3.0",
-    "gulp-group-css-media-queries": "^1.2.2",
-    "gulp-imagemin": "^7.1.0",
-    "gulp-rename": "^2.0.0",
-    "gulp-sass": "^4.1.0",
-    "gulp-svg-sprite": "^1.5.0",
-    "gulp-ttf2woff": "^1.1.1",
-    "gulp-ttf2woff2": "^4.0.1",
-    "gulp-uglify-es": "^2.0.0",
+    "@htmlacademy/editorconfig-cli": "1.x",
+    "autoprefixer": "9.5.x",
+    "browser-sync": "2.26.x",
+    "gulp": "4.0.x",
+    "gulp-csso": "^3.0.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-plumber": "1.2.x",
+    "gulp-postcss": "8.0.x",
+    "gulp-posthtml": "^3.0.4",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "4.0.x",
+    "gulp-sourcemaps": "2.6.x",
+    "gulp-svgstore": "^7.0.1",
     "gulp-webp": "^4.0.1",
-    "gulp-webp-html": "^1.0.2",
-    "gulp-webpcss": "^1.1.1",
-    "html-min": "^0.0.4",
-    "webp-converter": "^2.2.3"
+    "pixel-glass": "^1.0.13",
+    "posthtml-include": "^1.2.0",
+    "stylelint": "9.10.x",
+    "stylelint-config-htmlacademy": "0.1.x",
+    "eslint": "4.16.0",
+    "eslint-config-htmlacademy": "0.4.x"
+  },
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
+    "test": "npm run editorconfig && npm run stylelint && eslint source/js/",
+    "build": "gulp build",
+    "start": "gulp start",
+    "webp": "gulp webp",
+    "sprite": "gulp sprite"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ],
+  "editorconfig-cli": [
+    "*.json",
+    "*.js",
+    "source/*.html",
+    "source/js/**/*.js",
+    "source/img/**/*.svg",
+    "source/sass/**/*.{sass,scss}"
+  ],
+  "engines": {
+    "node": "8.15"
   },
   "dependencies": {
-    "autoprefixer": "^10.2.5",
-    "browserslist": "^4.16.3",
-    "caniuse-lite": "^1.0.30001204",
-    "gulp-cheerio": "^1.0.0",
-    "gulp-concat": "^2.6.1",
-    "swiper": "^6.5.0"
+    "del": "^4.1.1"
   }
 }

@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="description" content="Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья."/>
+  <title>Supergym - Фитнес-центр</title>
+	<link r​el​="​preload" ​href​="fonts/Abel-Regular.woff" ​a​s​="​font" ​>
+	<link r​el​="​preload" ​href​="fonts/Abel-Regular.woff2" ​a​s​="​font" ​>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <!-- <template style="display: none">
+    <include src="build/img/sprite_auto.svg"></include>
+  </template> -->
+
+	<main class="main">
+
+		<!-- Шапка сайта и меню навигации -->
+
+		<div class="container">
+			<header class="header">
+				<a class="logo" href="#">
+					<picture class="logo__img">
+						<source srcset="img/logo.png, img/logo-retina.png 2x" class="logo__img">
+						<img srcset="img/logo.png" alt="logo" width="146" height="52" class="logo__img">
+					</picture>
+				</a>
+				<nav class="menu">
+					<ul class="menu_list">
+						<li class="menu_item menu__item--underline"><a href="#" class="menu_link">Home</a></li>
+						<li class="menu_item menu__item--underline"><a href="#" class="menu_link">About Us</a></li>
+						<li class="menu_item menu__item--underline"><a href="#" class="menu_link">Our Services</a></li>
+						<li class="menu_item menu__item--underline"><a href="#" class="menu_link">Responsibilities</a></li>
+						<li class="menu_item menu__item--underline"><a href="#" class="menu_link">Country</a></li>
+						<li class="menu_item"><a href="" class="menu_link header__button">Apply</a></li>
+					</ul>
+				</nav>
+				<nav class="menu__mobile">
+					<div class="hamburger-menu">
+						<input id="menu__toggle" type="checkbox" />
+						<label class="menu__btn" for="menu__toggle">
+							<span></span>
+						</label>
+						<ul class="menu__box">
+							<li><a class="menu__item" href="#">Home</a></li>
+							<li><a class="menu__item" href="#">About Us</a></li>
+							<li><a class="menu__item" href="#">Our Services</a></li>
+							<li><a class="menu__item" href="#">Responsibilities</a></li>
+							<li><a class="menu__item" href="#">Country</a></li>
+						</ul>
+					</div>
+				</nav>
+			</header>
+		</div>
+
+		<!-- Главный баннер сайта с кнопкой -->
+
+		<section class="banner">
+			<div class="container">
+				<div class="banner__flex">
+					<div class="banner__content">
+						<div class="banner__text">
+							<h1 class="banner__title">We Help to
+								<span class="banner__title banner__title--violet">Build</span>
+								<br>Your Dream
+							</h1>
+							<div class="banner__subtitle">
+								We are always availed to consult on taking your higher education to the
+								next level so you can stay competitive in the global world. We welcome the
+								opportunity to work with you "today" for "tomorrow's" better career
+							</div>
+							<button class="banner__button button">
+								Apply Online
+								<svg class="button__arrow" width="18" height="16">
+									<use xlink:href="img/sprite/sprite.svg#arrow"></use>
+								</svg>
+							</button>
+						</div>
+						<div class="social">
+							<svg class="social__icon social__icon--fb social__icon--banner" width="11" height="20">
+								<use xlink:href="img/sprite/sprite.svg#facebook"></use>
+							</svg>
+							<svg class="social__icon social__icon--twitter social__icon--banner" width="21" height="18">
+								<use xlink:href="img/sprite/sprite.svg#twitter"></use>
+							</svg>
+							<svg class="social__icon social__icon--inst social__icon--banner" width="21" height="22">
+								<use xlink:href="img/sprite/sprite.svg#instagram"></use>
+							</svg>
+						</div>
+					</div>
+					<picture class="banner__img">
+						<source srcset="./img/banner.png, ./img/girl-retina.png 2x" class="banner__img--girl">
+						<img class="banner__img--girl" src="./img/banner.png" alt="banner" width="470" height="565">
+					</picture>
+					<!-- фиолетовый овал отрисован при помощи css -->
+					<div class="banner__oval"></div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Слайдер с логотипами университетов -->
+
+		<div class="bg-grey">
+			<div class="container">
+				<section class="featured">
+					<h2 class="featured__title">Featured Universities</h2>
+					<div class="swiper-container swiper-container__featured">
+						<div class="swiper-wrapper featured__slider">
+							<img src="img/featured_1.png" class="swiper-slide featured__img" alt="featured" width="225" height="68">
+							<img src="img/featured_2.png" class="swiper-slide featured__img" alt="featured" width="250" height="64">
+							<img src="img/featured_3.png" class="swiper-slide featured__img" alt="featured" width="224" height="79">
+							<img src="img/featured_4.png" class="swiper-slide featured__img" alt="featured" width="275" height="62">
+							<img src="img/featured_1.png" class="swiper-slide featured__img" alt="featured" width="225" height="68">
+							<img src="img/featured_2.png" class="swiper-slide featured__img" alt="featured" width="250" height="64">
+							<img src="img/featured_3.png" class="swiper-slide featured__img" alt="featured" width="224" height="79">
+							<img src="img/featured_4.png" class="swiper-slide featured__img" alt="featured" width="275" height="62">
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<!-- Наши услуги -->
+
+		<section class="services">
+			<div class="container">
+				<div class="block-title services__title">
+					<h2 class="title">Our Services</h2>
+					<p class="subtitle">Executive Trade International is an University Application Centre,
+						guiding Bangladeshi students to Australian, British,
+						Canadian and Irish universities!
+					</p>
+				</div>
+				<div class="services__wrapper">
+					<article class="card services__card">
+						<div class="services__icon services__icon--1">
+							<svg class="icon" width="30" height="30">
+								<use xlink:href="img/sprite/sprite.svg#services1"></use>
+							</svg>
+						</div>
+						<h3 class="services__title">Career Counselling</h3>
+						<p class="services__text">Maiores voluptas laboriosam non dolorum perferendis fuga repellat aut.
+							Blanditiis quos in minus. Voluptatum quia quia voluptas voluptatem vero
+							ex possimus. Iure et consectetur dolorem dicta accusantium fugiat.
+						</p>
+						<div class="learn-more">
+							<a class="learn-more__link" href="#">Learn more</a>
+							<svg class="button__arrow arrow" width="18" height="16">
+								<use xlink:href="img/sprite/sprite.svg#arrow"></use>
+							</svg>
+						</div>
+					</article>
+					<article class="card services__card">
+						<div class="services__icon services__icon--2">
+							<svg class="icon" width="26" height="26" viewBox="0 0 37 37">
+								<use xlink:href="img/sprite/sprite.svg#services2"></use>
+							</svg>
+						</div>
+						<h3 class="services__title">University Admissions</h3>
+						<p class="services__text">Maiores voluptas laboriosam non dolorum perferendis fuga repellat aut.
+							Blanditiis
+							quos in minus. Voluptatum quia quia voluptas voluptatem vero ex possimus.
+							Iure et consectetur dolorem dicta accusantium fugiat.
+						</p>
+						<div class="learn-more">
+							<a class="learn-more__link" href="#">Learn more</a>
+							<svg class="button__arrow arrow" width="18" height="16">
+								<use xlink:href="img/sprite/sprite.svg#arrow"></use>
+							</svg>
+						</div>
+					</article>
+					<article class="card services__card">
+						<div class="services__icon services__icon--3">
+							<svg class="icon" widht="22" height="29" viewBox="0 0 24 30">
+								<use xlink:href="img/sprite/sprite.svg#services3"></use>
+							</svg>
+						</div>
+						<h3 class="services__title">Visa Consultancy</h3>
+						<p class="services__text">Maiores voluptas laboriosam non dolorum perferendis fuga repellat aut.
+							Blanditiis quos in minus. Voluptatum quia quia voluptas voluptatem vero
+							ex possimus. Iure et consectetur dolorem dicta accusantium fugiat.
+						</p>
+						<div class="learn-more">
+							<a class="learn-more__link" href="#">Learn more</a>
+							<svg class="button__arrow arrow" width="18" height="16">
+								<use xlink:href="img/sprite/sprite.svg#arrow"></use>
+							</svg>
+						</div>
+					</article>
+					<article class="card services__card">
+						<div class="services__icon services__icon--4">
+							<svg class="icon" width="23" height="28">
+								<use xlink:href="img/sprite/sprite.svg#services4"></use>
+							</svg>
+						</div>
+						<h3 class="services__title">Accommodation</h3>
+						<p class="services__text">Maiores voluptas laboriosam non dolorum perferendis fuga repellat aut.
+							Blanditiis quos in minus. Voluptatum quia quia voluptas voluptatem vero ex possimus.
+							Iure et consectetur dolorem dicta accusantium fugiat.
+						</p>
+						<div class="learn-more">
+							<a class="learn-more__link" href="#">Learn more</a>
+							<svg class="button__arrow arrow" width="18" height="16">
+								<use xlink:href="img/sprite/sprite.svg#arrow"></use>
+							</svg>
+						</div>
+					</article>
+					<article class="card services__card">
+						<div class="services__icon services__icon--5">
+							<svg class="icon" width="26" height="18">
+								<use xlink:href="img/sprite/sprite.svg#services5"></use>
+							</svg>
+						</div>
+						<h3 class="services__title">Pre-Departure Briefing</h3>
+						<p class="services__text">Maiores voluptas laboriosam non dolorum perferendis fuga repellat aut.
+							Blanditiis quos in minus. Voluptatum quia quia voluptas voluptatem vero
+							ex possimus. Iure et consectetur dolorem dicta accusantium fugiat.
+						</p>
+						<div class="learn-more">
+							<a class="learn-more__link" href="#">Learn more</a>
+							<svg class="button__arrow arrow" width="18" height="16">
+								<use xlink:href="img/sprite/sprite.svg#arrow"></use>
+							</svg>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+		<!-- Новости -->
+
+		<div class="bg-grey">
+			<div class="container">
+				<div class="news">
+					<div class="block-title news__title">
+						<h2 class="title">News</h2>
+						<p class="subtitle">Sunt autem nusquam hoc epicurus in gravissimo bello animadversionis metu
+							degendae praesidia firmissima. Torquatos nostros? quos tu paulo ante cum
+							teneam sententiam, quid bonum esse vult.
+						</p>
+					</div>
+					<section class="container__news">
+						<article class="card news__card">
+							<picture class="news__img">
+								<source srcset="./img/card_news_1.png, ./img/retina/news-retina1.png 2x" class="news__img">
+								<img srcset="./img/card_news_1.png" alt="card" width="344" height="224" class="news__img">
+							</picture>
+							<div class="news__date">
+								<div class="date">
+									<svg class="date__icon" width="14" height="14">
+										<use xlink:href="img/sprite/sprite.svg#calendar"></use>
+									</svg>
+									<span class="date__calendar">17 Apr 2020</span>
+								</div>
+								<div class="news__text">
+									Come On In. The Water’s Fine (Mostly).
+								</div>
+							</div>
+						</article>
+						<article class="card news__card">
+							<picture class="news__img">
+								<source srcset="./img/card_news_2.png, ./img/retina/news-retina2.png 2x" class="news__img">
+								<img srcset="./img/card_news_2.png" alt="card" width="344" height="224" class="news__img">
+							</picture>
+							<div class="news__date">
+								<div class="date">
+									<svg class="date__icon" width="14" height="14">
+										<use xlink:href="img/sprite/sprite.svg#calendar"></use>
+									</svg>
+									<span class="date__calendar">17 Apr 2020</span>
+								</div>
+								<div class="news__text">
+									Trump Lays Plans to Reverse Obama’s Climate Change Legacy
+								</div>
+							</div>
+						</article>
+						<article class="card news__card">
+							<picture class="news__img">
+								<source srcset="./img/card_news_3.png, ./img/retina/news-retina3.png 2x" class="news__img">
+								<img class="news__img" src="img/card_news_3.png" alt="card" width="344" height="224">
+							</picture>
+							<div class="news__date">
+								<div class="date">
+									<svg class="date__icon" width="14" height="14">
+										<use xlink:href="img/sprite/sprite.svg#calendar"></use>
+									</svg>
+									<span class="date__calendar">17 Apr 2020</span>
+								</div>
+								<div class="news__text">
+									How a Little Bit of Hydra Regrows a Whole Animal
+								</div>
+							</div>
+						</article>
+					</section>
+				</div>
+				<button class="button news__button">
+					Join Here
+					<svg class="button__arrow news__button-arrow" width="18" height="16">
+						<use xlink:href="img/sprite/sprite.svg#arrow"></use>
+					</svg>
+				</button>
+				</section>
+			</div>
+
+			<!-- Мероприятия -->
+
+			<section class="event">
+				<div class="container">
+
+					<div class="block-title event__title">
+						<h2 class="title">Upcoming University Events</h2>
+						<p class="subtitle">Sunt autem nusquam hoc epicurus in gravissimo bello animadversionis
+							metu degendae praesidia firmissima. Torquatos nostros? quos tu paulo
+							ante cum teneam sententiam, quid bonum esse vult.
+						</p>
+					</div>
+
+					<div class="swiper-container swiper-container__event">
+						<div class="swiper-wrapper event__wrapper">
+							<div class="swiper-slide event__card">
+								<div class="event__info">
+									<div class="event__date">
+										<span class="event__big-text"> 23 </span>
+										<span class="event__mini-text">Dec</span>
+									</div>
+									<div class="event__location">
+										Macquarie University,
+										<br> Sydney, Australia
+									</div>
+								</div>
+								<p class="event__description card__text">
+									Maiores voluptas laboriosam non dolorum perferendis fuga
+									repellat aut. Blanditiis quos in minus. Voluptatum quia quia
+									voluptas voluptatem vero ex possimus. Iure et consectetur dolorem
+									dicta accusantium fugiat.
+								</p>
+								<div class="event__link">
+									<div class="learn-more">
+										<a class="learn-more__link" href="#">Learn More</a>
+										<svg class="learn-more__arrow" width="18" height="16">
+											<use xlink:href="img/sprite/sprite.svg#arrow"></use>
+										</svg>
+									</div>
+									<div class="event__time">
+										<svg class="event__time-icon" width="17" height="17">
+											<use xlink:href="img/sprite/sprite.svg#time"></use>
+										</svg>
+										<time class="event__time-text">10:00 AM - 2:00 PM</time>
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-slide event__card">
+								<div class="event__info">
+									<div class="event__date">
+										<span class="event__big-text"> 17 </span>
+										<span class="event__mini-text">Dec</span>
+									</div>
+									<div class="event__location">
+										Federation University,
+										<br> Australia
+									</div>
+								</div>
+								<p class="event__description card__text">
+									Maiores voluptas laboriosam non dolorum perferendis fuga
+									repellat aut. Blanditiis quos in minus. Voluptatum quia quia
+									voluptas voluptatem vero ex possimus. Iure et consectetur dolorem
+									dicta accusantium fugiat.
+								</p>
+								<div class="event__link">
+									<div class="learn-more">
+										<a class="learn-more__link" href="#">Learn More</a>
+										<svg class="learn__arrow" width="18" height="16">
+											<use xlink:href="img/sprite/sprite.svg#arrow"></use>
+										</svg>
+									</div>
+									<div class="event__time">
+										<svg class="event__time-icon" width="17" height="17">
+											<use xlink:href="img/sprite/sprite.svg#time"></use>
+										</svg>
+										<time class="event__time-text">10:00 AM - 2:00 PM</time>
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-slide event__card">
+								<div class="event__info">
+									<div class="event__date">
+										<span class="event__big-text"> 23 </span>
+										<span class="event__mini-text">Dec</span>
+									</div>
+									<div class="event__location">
+										Macquarie University,
+										<br> Sydney, Australia
+									</div>
+								</div>
+								<p class="event__description card__text">
+									Maiores voluptas laboriosam non dolorum perferendis fuga
+									repellat aut. Blanditiis quos in minus. Voluptatum quia quia
+									voluptas voluptatem vero ex possimus. Iure et consectetur dolorem
+									dicta accusantium fugiat.
+								</p>
+								<div class="event__link">
+									<div class="learn-more">
+										<a class="learn-more__link" href="#">Learn More</a>
+										<svg class="learn__arrow" width="18" height="16">
+											<use xlink:href="img/sprite/sprite.svg#arrow"></use>
+										</svg>
+									</div>
+									<div class="event__time">
+										<svg class="event__time-icon" width="17" height="17">
+											<use xlink:href="img/sprite/sprite.svg#time"></use>
+										</svg>
+										<time class="event__time-text">10:00 AM - 2:00 PM</time>
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-slide event__card">
+								<div class="event__info">
+									<div class="event__date">
+										<span class="event__big-text"> 17 </span>
+										<span class="event__mini-text">Dec</span>
+									</div>
+									<div class="event__location">
+										Federation University,
+										<br> Australia
+									</div>
+								</div>
+								<p class="event__description card__text">
+									Maiores voluptas laboriosam non dolorum perferendis fuga
+									repellat aut. Blanditiis quos in minus. Voluptatum quia quia
+									voluptas voluptatem vero ex possimus. Iure et consectetur dolorem
+									dicta accusantium fugiat.
+								</p>
+								<div class="event__link">
+									<div class="learn-more">
+										<a class="learn-more__link" href="#">Learn More</a>
+										<svg class="learn__arrow" width="18" height="16">
+											<use xlink:href="img/sprite/sprite.svg#arrow"></use>
+										</svg>
+									</div>
+									<div class="event__time">
+										<svg class="event__time-icon" width="17" height="17">
+											<use xlink:href="img/sprite/sprite.svg#time"></use>
+										</svg>
+										<time class="event__time-text">10:00 AM - 2:00 PM</time>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide event__card">
+								<div class="event__info">
+									<div class="event__date">
+										<span class="event__big-text"> 23 </span>
+										<span class="event__mini-text">Dec</span>
+									</div>
+									<div class="event__location">
+										Macquarie University,
+										<br> Sydney, Australia
+									</div>
+								</div>
+								<p class="event__description card__text">
+									Maiores voluptas laboriosam non dolorum perferendis fuga
+									repellat aut. Blanditiis quos in minus. Voluptatum quia quia
+									voluptas voluptatem vero ex possimus. Iure et consectetur dolorem
+									dicta accusantium fugiat.
+								</p>
+								<div class="event__link">
+									<div class="learn-more">
+										<a class="learn-more__link" href="#">Learn More</a>
+										<svg class="learn__arrow" width="18" height="16">
+											<use xlink:href="img/sprite/sprite.svg#arrow"></use>
+										</svg>
+									</div>
+									<div class="event__time">
+										<svg class="event__time-icon" width="17" height="17">
+											<use xlink:href="img/sprite/sprite.svg#time"></use>
+										</svg>
+										<time class="event__time-text">10:00 AM - 2:00 PM</time>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination swiper-pagination__event"></div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Слайдер страны обучения -->
+
+			<section class="countries bg-grey">
+				<div class=" container">
+					<div class="block-title">
+						<h2 class="title">
+							Countries We Covered
+						</h2>
+						<p class="subtitle">
+							Sunt autem nusquam hoc epicurus in gravissimo bello animadversionis
+							metu degendae praesidia firmissima. Torquatos nostros? quos tu paulo
+							ante cum teneam sententiam, quid bonum esse vult.
+						</p>
+					</div>
+
+					<div class="swiper-container swiper-container__countries">
+						<div class="swiper-wrapper countries__wrapper">
+							<div class="swiper-slide countries__card">
+								<pictures class="countries__img">
+									<source srcset="./img/countries.png, ./img/retina/countries-retina1.png 2x" class="countries__img">
+									<img src="img/countries_1.png" alt="countries" width="348" height="215" class="countries__img">
+								</pictures>
+								<h3 class="countries__title">
+									Study in Australia
+								</h3>
+								<p class="countries__subtitle card__text">
+									Ut aut corporis accusantium illo ullam qui laudantium.
+									Maxime rerum sunt et sequi sed qui rerum hic. Voluptatem maiores
+									voluptatum voluptate porro harum. Facilis voluptatum eum est.
+								</p>
+							</div>
+							<div class="swiper-slide countries__card">
+								<pictures class="countries__img">
+									<source srcset="./img/countries_2.png, ./img/retina/countries-retina2.png 2x" class="countries__img">
+									<img srcset="./img/countries_2.png" alt="countries" width="348" height="215" class="countries__img">
+								</pictures>
+								<h3 class="countries__title">
+									Study in Canada
+								</h3>
+								<p class="countries__subtitle card__text">
+									Ut aut corporis accusantium illo ullam qui laudantium.
+									Maxime rerum sunt et sequi sed qui rerum hic. Voluptatem maiores
+									voluptatum voluptate porro harum. Facilis voluptatum eum est.
+								</p>
+							</div>
+							<div class="swiper-slide countries__card">
+								<pictures class="countries__img">
+									<source srcset="./img/countries_3.png, ./img/retina/countries-retina3.png 2x" class="countries__img">
+									<img srcset="img/countries_3.png" alt="countries" width="348" height="215" class="countries__img">
+								</pictires>
+								<h3 class="countries__title">
+									Study in Canada
+								</h3>
+								<p class="countries__subtitle card__text">
+									Ut aut corporis accusantium illo ullam qui laudantium.
+									Maxime rerum sunt et sequi sed qui rerum hic. Voluptatem maiores
+									voluptatum voluptate porro harum. Facilis voluptatum eum est.
+								</p>
+							</div>
+							<div class="swiper-slide countries__card">
+								<pictures class="countries__img">
+									<source srcset="./img/countries.png, ./img/retina/countries-retina1.png 2x" class="countries__img">
+									<img src="img/countries_1.png" alt="countries" width="348" height="215" class="countries__img">
+								</pictures>
+								<h3 class="countries__title">
+									Study in Australia
+								</h3>
+								<p class="countries__subtitle card__text">
+									Ut aut corporis accusantium illo ullam qui laudantium.
+									Maxime rerum sunt et sequi sed qui rerum hic. Voluptatem maiores
+									voluptatum voluptate porro harum. Facilis voluptatum eum est.
+								</p>
+							</div>
+							<div class="swiper-slide countries__card">
+								<pictures class="countries__img">
+									<source srcset="./img/countries_2.png, ./img/retina/countries-retina2.png 2x" class="countries__img">
+									<img srcset="./img/countries_2.png" alt="countries" width="348" height="215" class="countries__img">
+								</pictures>
+								<h3 class="countries__title">
+									Study in Canada
+								</h3>
+								<p class="countries__subtitle card__text">
+									Ut aut corporis accusantium illo ullam qui laudantium.
+									Maxime rerum sunt et sequi sed qui rerum hic. Voluptatem maiores
+									voluptatum voluptate porro harum. Facilis voluptatum eum est.
+								</p>
+							</div>
+							<div class="swiper-slide countries__card">
+								<pictures class="countries__img">
+									<source srcset="./img/countries_3.png, ./img/retina/countries-retina3.png 2x" class="countries__img">
+									<img srcset="img/countries_3.png" alt="countries" width="348" height="215" class="countries__img">
+								</pictires>
+								<h3 class="countries__title">
+									Study in Canada
+								</h3>
+								<p class="countries__subtitle card__text">
+									Ut aut corporis accusantium illo ullam qui laudantium.
+									Maxime rerum sunt et sequi sed qui rerum hic. Voluptatem maiores
+									voluptatum voluptate porro harum. Facilis voluptatum eum est.
+								</p>
+							</div>
+						</div>
+						<div class="swiper-pagination swiper-pagination__countries"></div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<!-- Слайдер с отзывами -->
+
+		<section class="testimonial">
+			<div class="container">
+				<div class="block-title">
+					<h2 class="title">
+						Testimonial
+					</h2>
+					<p class="subtitle">
+						Torquem detraxit hosti et quidem faciunt, ut et negent satis esse appetendum,
+						alterum. Si sine causa? quae fuerit causa, mox videro; interea hoc epicurus in liberos.
+					</p>
+				</div>
+				<div class="swiper-container swiper-container__testimonial">
+					<div class="swiper-wrapper testimonial__wrapper">
+						<div class="swiper-slide testimonial__slide">
+							<div class="people">
+								<img class="people__img" src="img/testimonial_1.png" alt="face" width="62" height="62">
+								<div class="people__card">
+									<span class="people__name">Harrison Phillips</span>
+									<span class="people__proffesion">Reporter</span>
+								</div>
+							</div>
+							<div class="testimonial__text">
+								Nisi cumque in necessitatibus molestiae eaque excepturi ab. Laboriosam
+								ipsam voluptatem voluptatibus labore quam nihil. Quasi occaecati quos
+								ratione quia aut molestiae velit et. Voluptatem id ea dicta inventore et quo impedit
+								repudiandae.
+								Qui officia aperiam atque qui occaecati est. Magnam voluptatem earum excepturi qui quae ea
+								qui.
+							</div>
+						</div>
+						<div class="swiper-slide testimonial__slide">
+							<div class="people">
+								<img class="people__img" src="img/testimonial_2.png" alt="face" width="62" height="62">
+								<div class="people__card">
+									<span class="people__name">Ainara Vergaras</span>
+									<span class="people__proffesion">Landscape Architect</span>
+								</div>
+							</div>
+							<div class="testimonial__text">
+								Aut consectetur voluptas. Voluptatem minus quo voluptas in nulla iste. Fugiat alias sit
+								sed dolorem quo. Qui praesentium et doloribus minima neque. Facere debitis sed est
+								suscipit velit reprehenderit. Dolores aliquid dolore consequuntur ex.
+							</div>
+						</div>
+						<div class="swiper-slide testimonial__slide">
+							<div class="people">
+								<img class="people__img" src="img/testimonial_3.png" alt="face" width="62" height="62">
+								<div class="people__card">
+									<span class="people__name">Niek Bove</span>
+									<span class="people__proffesion">Senior Developer</span>
+								</div>
+							</div>
+							<div class="testimonial__text">
+								Rem quia possimus eum adipisci autem aut sunt laboriosam autem. Qui soluta ut
+								aut excepturi dolorem laborum ut. Qui alias aut provident quas illo. Eveniet debitis
+								totam quaerat. Enim voluptatem fuga qui. Numquam iusto vero ipsa eveniet
+								iusto.
+							</div>
+						</div>
+						<div class="swiper-slide testimonial__slide">
+							<div class="people">
+								<img class="people__img" src="img/testimonial_1.png" alt="face" width="62" height="62">
+								<div class="people__card">
+									<span class="people__name">Harrison Phillips</span>
+									<span class="people__proffesion">Reporter</span>
+								</div>
+							</div>
+							<div class="testimonial__text">
+								Nisi cumque in necessitatibus molestiae eaque excepturi ab. Laboriosam
+								ipsam voluptatem voluptatibus labore quam nihil. Quasi occaecati quos
+								ratione quia aut molestiae velit et. Voluptatem id ea dicta inventore et quo impedit
+								repudiandae.
+								Qui officia aperiam atque qui occaecati est. Magnam voluptatem earum excepturi qui quae ea
+								qui.
+							</div>
+						</div>
+						<div class="swiper-slide testimonial__slide">
+							<div class="people">
+								<img class="people__img" src="img/testimonial_2.png" alt="face" width="62" height="62">
+								<div class="people__card">
+									<span class="people__name">Ainara Vergaras</span>
+									<span class="people__proffesion">Landscape Architect</span>
+								</div>
+							</div>
+							<div class="testimonial__text">
+								Aut consectetur voluptas. Voluptatem minus quo voluptas in nulla iste. Fugiat alias sit
+								sed dolorem quo. Qui praesentium et doloribus minima neque. Facere debitis sed est
+								suscipit velit reprehenderit. Dolores aliquid dolore consequuntur ex.
+							</div>
+						</div>
+						<div class="swiper-slide testimonial__slide">
+							<div class="people">
+								<img class="people__img" src="img/testimonial_3.png" alt="face" width="62" height="62">
+								<div class="people__card">
+									<span class="people__name">Niek Bove</span>
+									<span class="people__proffesion">Senior Developer</span>
+								</div>
+							</div>
+							<div class="testimonial__text">
+								Rem quia possimus eum adipisci autem aut sunt laboriosam autem. Qui soluta ut
+								aut excepturi dolorem laborum ut. Qui alias aut provident quas illo. Eveniet debitis
+								totam quaerat. Enim voluptatem fuga qui. Numquam iusto vero ipsa eveniet
+								iusto.
+							</div>
+						</div>
+						<div class="swiper-pagination swiper-pagination__testimonial"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Секция с кнопкой и призывом к действию -->
+
+		<section class="bg-grey">
+			<div class="container action">
+				<div class="action__title">
+					Ready to chase your dreams?
+				</div>
+				<button class="button banner__button">
+					Apply Online
+					<svg class="learn__arrow" width="18" height="16">
+						<use xlink:href="img/sprite/sprite.svg#arrow"></use>
+					</svg>
+				</button>
+			</div>
+		</section>
+	</main>
+
+	<footer class="bg-violet">
+		<div class="container footer">
+			<div class="footer__info">
+				<div class="logo logo__footer">
+					<img src="img/logo_white.png" alt="logo" width="160" height="57">
+				</div>
+				<address class="address">
+					<span class="address__text footer__text">
+						Concord Royal Court (3rd floor)
+					</span>
+					<span class="address__text footer__text">
+						Dhanmondi, Dhaka 1209, Bangladesh.
+					</span>
+					<span class="footer__text corporation">
+						© 2020 Executive Trade International.
+					</span>
+				</address>
+			</div>
+			<nav class="footer__nav">
+				<ul class="footer__menu">
+					<li><a class="footer__menu-item footer__text" href="#">About Us</a></li>
+					<li><a class="footer__menu-item footer__text" href="#">Responsibilities</a></li>
+					<li><a class="footer__menu-item footer__text" href="#">Our Services</a></li>
+					<li><a class="footer__menu-item footer__text" href="#">Contact</a></li>
+				</ul>
+				<ul class="footer__menu">
+					<li><a class="footer__menu-item footer__text" href="#">Disclaimer</a></li>
+					<li><a class="footer__menu-item footer__text" href="#">Testimonials</a></li>
+					<li><a class="footer__menu-item footer__text" href="#">Privacy Policy</a></li>
+					<li><a class="footer__menu-item footer__text" href="#">Terms of Service</a></li>
+				</ul>
+			</nav>
+			<div class="footer__social">
+				<svg class="footer__icon footer__icon--fb" width="9" height="16">
+					<use xlink:href="img/sprite/sprite.svg#facebook"></use>
+				</svg>
+				<svg class="footer__icon" width="16" height="14">
+					<use xlink:href="img/sprite/sprite.svg#twitter"></use>
+				</svg>
+				<svg class="footer__icon" width="16" height="16">
+					<use xlink:href="img/sprite/sprite.svg#instagram"></use>
+				</svg>
+				<address class="address__mobile">
+					<span class="address__text footer__text">
+						Concord Royal Court (3rd floor)
+					</span>
+					<span class="address__text footer__text">
+						Dhanmondi, Dhaka 1209, Bangladesh.
+					</span>
+					<span class="footer__text corporation">
+						© 2020 Executive Trade International.
+					</span>
+				</address>
+			</div>
+		</div>
+	</footer>
+  <script src="js/vendor/input-mask.js"></script>
+  <script src="js/vendor/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
